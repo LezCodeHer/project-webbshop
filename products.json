@@ -1,0 +1,73 @@
+{
+  "items": [
+    {
+      "title": "Tabla 1",
+      "beskrivning": "Beskrivning1",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "1000 kr"
+    },
+
+    {
+      "title": "Tabla 2",
+      "beskrivning": "Beskrivning2",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "2000 kr"
+    },
+
+    {
+      "title": "Tabla 3",
+      "beskrivning": "Beskrivning 3",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "3000 kr"
+    },
+
+    {
+      "title": "Tabla 4",
+      "beskrivning": "Beskrivning 4",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "4000 kr"
+    },
+
+    {
+      "title": "Tabla 5",
+      "beskrivning": "Beskrivning 5",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "5000 kr"
+    },
+
+    {
+      "title": "Tabla 6",
+      "beskrivning": "Beskrivning 6",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "6000 kr"
+    },
+
+    {
+      "title": "Tabla 7",
+      "beskrivning": "Beskrivning 7",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "7000 kr"
+    },
+
+    {
+      "title": "Tabla 8",
+      "beskrivning": "Beskrivning 8",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "8000 kr"
+    },
+
+    {
+      "title": "Tabla 9",
+      "beskrivning": "Beskrivning 9",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "9000 kr"
+    },
+
+    {
+      "title": "Tabla 10",
+      "beskrivning": "Beskrivning 10",
+      "bild": "./images/Pinterest-logo.png",
+      "pris": "10000 kr"
+    }
+  ]
+}

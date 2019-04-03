@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        form {
+            width: 60%;
+            margin: 60px auto;
+        }
+
+        #message, #msgEmail {
+            color: red;
+            padding: 0 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <!-- Kunden behöver ange namn, telefon, e-post och leveransadress -->
+        <!-- <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+            </div>
+        </div> -->
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="user">First and last name*</label><br>
+                <input id="inputName" class="form-control" type="name" placeholder="First and Last name" required>
+                <p id="message"></p>
+            </div>
+            <div class="form-group col-md-12">
+                <label for="example-tel-input">Telephone</label>
+                <input id="inputTel" class="form-control" type="tel" placeholder="+46 701234567">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email*</label>
+                <input id="inputEmail" type="email" class="form-control" placeholder="yourEmail@mail.com" required>
+                <p id="msgEmail"></p>
+            </div>
+        </div>
+        <br>
+        <h4>Delivery Address:</h4><br>
+        <div class="form-group">
+            <label for="inputAddress">Street*</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Drottninggatan 100A" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip*</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="12345" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCity">City*</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Stockholm" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Country*</label>
+                <input type="text" class="form-control" id="inputCountry" placeholder="Sweden" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck" required>
+                    Agree to terms and conditions
+                </label>
+            </div>
+        </div>
+        <button id=submitBtn type="submit" class="btn btn-primary">Complete Order</button>
+    </form>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

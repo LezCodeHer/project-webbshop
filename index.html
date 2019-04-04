@@ -10,12 +10,20 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Hem</title>
+    <style></style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
+
+    <!--  -->
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:#54B7B2 !important;">
+      <a id="store-name" class="navbar-brand" href="#">Live Hacks</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -42,9 +50,17 @@
           </li>
         </ul>
       </div>
+      <i class="fas fa-shopping-basket"></i>
     </nav>
 
-    <main role="main" class="container">
+    <!--  -->
+
+    <div class="banner">
+      <!-- <img src="images/banner.jpg" alt="banner"> -->
+      <img src="images/deanna-j-565002-unsplash.jpg" alt="banner" />
+    </div>
+
+    <!-- <main role="main" class="container">
       <div class="jumbotron">
         <h1>Navbar example</h1>
         <p class="lead">
@@ -61,12 +77,71 @@
           >View navbar docs &raquo;</a
         >
       </div>
-    </main>
+    </main> -->
 
     <!--  -->
 
     <div id="container1"></div>
-    <a href="./products.json">JSON fil länk</a>
+    <a href="./products.json" type="button" class="jsonlink">JSON fil länk</a>
+
+    <!--  -->
+
+    <!-- <footer>
+      <p>Copyright 2019</p>
+      <div class="social-media">
+        <i class="fa fa-github" title="Instagram"></i>
+      </div>
+    </footer> -->
+
+    <footer
+      id="footer"
+      class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"
+      style="position: relative;"
+    >
+      <a class="navbar-brand" href="#">Bottom navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropup">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown10"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropup</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown10">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <!--  -->
 

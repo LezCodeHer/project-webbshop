@@ -1,8 +1,19 @@
 body {
   min-height: 75rem;
-  padding-top: 3.5rem;
-  background-color: #EEE9E3 !important;
+  padding-top: 3.3rem;
+  background-color: #eee9e3 !important;
+}
+.basket-icon,
+.github-icon {
   font-family: "Poiret One", cursive;
+  color: white;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.github-icon {
+  font-size: 40px;
 }
 /* .banner {
   
@@ -14,14 +25,17 @@ body {
   width: 1100px;
   margin: 50px auto;
 }
-.nav-color {
-}
+/* .nav-color {
+} */
 #store-name {
   font-size: 40px !important;
   padding: 0 !important;
 }
 .card {
+  text-align: center;
   margin: 10px;
+  width: 250px !important;
+  box-shadow: 0px 8px 8px 0px #928d8d !important;
 }
 /* .jsonlink {
 
@@ -62,7 +76,7 @@ footer {
   align-items: center;
 }
 #footer {
-  background-color: #54B7B2 !important;
+  background-color: #54b7b2 !important;
 }
 .social-media {
   width: 40px;
@@ -71,4 +85,17 @@ footer {
 }
 input {
   border: none !important;
+}
+.index {
+  display: flex;
+  background-color: #C398CD;
+  border: none;
+  justify-content: center !important;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+.index:hover {
+  background-color: rgb(68, 65, 65);
+  color: #eee9e3;
 }

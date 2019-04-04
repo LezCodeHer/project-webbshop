@@ -25,7 +25,7 @@ function demoCallback(xhr) {
       "<img src=" +
       item[i].bild +
       ">" +
-      "<div class='card-body'>" +
+      "<div class='card-body' style='padding: 5px !important;'>" +
       "<h5 id='title' class='card-title'>" +
       item[i].title +
       "</h5>" +
@@ -35,7 +35,7 @@ function demoCallback(xhr) {
       "<p id='pris' class='card-text'>" +
       item[i].pris +
       "</p>" +
-      "<a href='./bestallning.html' class='index btn btn-primary'>Köp</a></div></div>";
+      "<a href='./bestallning.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
   }
   document.getElementById("container1").innerHTML = output;
   localStorage.setItem("obj", JSON.stringify(products));

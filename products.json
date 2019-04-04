@@ -3,71 +3,83 @@
     {
       "title": "Tabla 1",
       "beskrivning": "Beskrivning1",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "1000 kr"
     },
 
     {
       "title": "Tabla 2",
       "beskrivning": "Beskrivning2",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "2000 kr"
     },
 
     {
       "title": "Tabla 3",
       "beskrivning": "Beskrivning 3",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "3000 kr"
     },
 
     {
       "title": "Tabla 4",
       "beskrivning": "Beskrivning 4",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "4000 kr"
     },
 
     {
       "title": "Tabla 5",
       "beskrivning": "Beskrivning 5",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "5000 kr"
     },
 
     {
       "title": "Tabla 6",
       "beskrivning": "Beskrivning 6",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "6000 kr"
     },
 
     {
       "title": "Tabla 7",
       "beskrivning": "Beskrivning 7",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "7000 kr"
     },
 
     {
       "title": "Tabla 8",
       "beskrivning": "Beskrivning 8",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "8000 kr"
     },
 
     {
       "title": "Tabla 9",
       "beskrivning": "Beskrivning 9",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "9000 kr"
     },
 
     {
       "title": "Tabla 10",
       "beskrivning": "Beskrivning 10",
-      "bild": "./images/Pinterest-logo.png",
+      "bild": "./images/banner.jpg",
       "pris": "10000 kr"
+    },
+    {
+      "title": "Tabla 11",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/banner.jpg",
+      "pris": "11000 kr"
+    },
+    {
+      "title": "Tabla 12",
+      "beskrivning": "Beskrivning 12",
+      "bild": "./images/banner.jpg",
+      "pris": "12000 kr"
     }
   ]
 }

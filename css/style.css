@@ -126,3 +126,9 @@ input {
   display: flex !important;
   justify-content: flex-end !important;
 }
+#list {
+  width: 20%;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}

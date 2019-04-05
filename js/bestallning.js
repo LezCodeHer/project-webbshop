@@ -1,6 +1,6 @@
 // betallningar.html
 
-const ul = document.getElementById("list");
+const table = document.getElementById("table");
 let itemsArray = [];
 
 for (let i = 0; i < localStorage.length; i++) {
@@ -14,7 +14,7 @@ for (let i = 0; i < localStorage.length; i++) {
   let pris = obj.pris;
 
   let output2 =
-    "<tr><td><img src=" +
+    "<td><img src=" +
     bild +
     "></td>" +
     "<td><h3>" +
@@ -24,39 +24,31 @@ for (let i = 0; i < localStorage.length; i++) {
     beskrivning +
     "</p></td><td><h6>" +
     pris +
-    "</h6></td></tr>";
+    "</h6></td><td><button class='delete'>Ta bort</button></td>";
 
-    liMaker(output2);
+  tableMaker(output2);
 
+  $(document).ready(function() {    
+    $(".delete").on("click", function() {
+      $(this)
+        .parents("tr")
+        .remove();
+      localStorage.removeItem(`orderItem${i}`);
+    });
+  });
 }
 
-function liMaker(obj){
-  const li = document.createElement("li");
+function tableMaker(obj) {
+  const tr = document.createElement("tr");
 
-  li.innerHTML = obj;
-  ul.appendChild(li);
+  tr.innerHTML = obj;
+  table.appendChild(tr);
 }
 
-// let obj = localStorage.getItem("obj");
-// let index = localStorage.getItem("index");
-// let bild = JSON.parse(obj).items[index].bild;
-// let title = JSON.parse(obj).items[index].title;
-// let beskrivning = JSON.parse(obj).items[index].beskrivning;
-// let pris = JSON.parse(obj).items[index].pris;
-
-// let output =
-//   "<tr><td><img src=" +
-//   bild +
-//   "></td>" +
-//   "<td><h3>" +
-//   title +
-//   "</h3></td>" +
-//   "<td><p>" +
-//   beskrivning +
-//   "</p></td><td><h6>" +
-//   pris +
-//   "</h6></td></tr>";
-
-// $(document).ready(function() {
-//   $("#container2").append(output);
-// });
+$(document).ready(function() {
+  $("#clear-ls").on("click", function() {
+    $(this).remove();
+    $("#table").remove();
+    localStorage.clear();
+  });
+});

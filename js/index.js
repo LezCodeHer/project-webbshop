@@ -56,6 +56,7 @@ function demoCallback(xhr) {
       orderItem.push(item[i]);
       localStorage.setItem("orderItem"+i, JSON.stringify(orderItem[0]));
     });
+    // localStorage.setItem("index", i);
   }
 }
 

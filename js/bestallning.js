@@ -1,52 +1,60 @@
 // betallningar.html
 
-const table = document.getElementById("table");
+$(document).ready(function() {
+  if (localStorage.length === 0) {
+    $(".clear-ls").css("display", "none");
+  } else {
+    const table = document.getElementById("table");
 
-Object.keys(localStorage).forEach(function(key) {
-  let obj = JSON.parse(localStorage.getItem(`${key}`));
+    Object.keys(localStorage).forEach(function(key) {
+      let obj = JSON.parse(localStorage.getItem(`${key}`));
 
-  let bild = obj.bild;
-  let title = obj.title;
-  let beskrivning = obj.beskrivning;
-  let pris = obj.pris;
+      let bild = obj.bild;
+      let title = obj.title;
+      let beskrivning = obj.beskrivning;
+      let pris = obj.pris;
 
-  let output2 =
-    "<td><img src=" +
-    bild +
-    "></td>" +
-    "<td><h3>" +
-    title +
-    "</h3></td>" +
-    "<td><p>" +
-    beskrivning +
-    "</p></td><td><h6>" +
-    pris +
-    "</h6></td><td><button class='delete' id='delete-item-key" +
-    `${key}` +
-    "'>Ta bort</button></td>";
+      let output2 =
+        "<td><img src=" +
+        bild +
+        "></td>" +
+        "<td><h3>" +
+        title +
+        "</h3></td>" +
+        "<td><p>" +
+        beskrivning +
+        "</p></td><td><h6>" +
+        pris +
+        "</h6></td><td><button class='delete'>Ta bort</button></td>";
 
-  tableMaker(output2);
+      tableMaker(output2);
 
-  $(document).ready(function() {
-    $(`#delete-item-key${key}`).on("click", function() {
-      localStorage.removeItem(`orderItem${key}`);
-      $(this)
-        .parents("tr")
-        .remove();
-      localStorage.removeItem(key);
-      if (localStorage.length === 0) {
-      $(".clear-ls").css("display", "none");
+      $(".delete").on("click", function() {
+        localStorage.removeItem(`orderItem${key}`);
+        $(this)
+          .parents("tr")
+          .remove();
+        localStorage.removeItem(key);
+        if (localStorage.length === 0) {
+          $(".clear-ls").css("display", "none");
+        }
+      });
+      $(".clear-ls").on("click", function() {
+        $(this).remove();
+        $("#table").remove();
+        localStorage.clear();
+        if (localStorage.length === 0) {
+          $(".clear-ls").css("display", "none");
+        }
+      });
+    });
+    function tableMaker(obj) {
+      const tr = document.createElement("tr");
+
+      tr.innerHTML = obj;
+      table.appendChild(tr);
     }
-    });
-    $(".clear-ls").on("click", function() {
-      $(this).remove();
-      $("#table").remove();
-      localStorage.clear();
-      if (localStorage.length === 0) {
-        $(".clear-ls").css("display", "none");
-      }
-    });
-  });
+  }
 });
 
 // for (let i = 0; i < localStorage.length; i++) {
@@ -88,12 +96,3 @@ Object.keys(localStorage).forEach(function(key) {
 //     });
 //   });
 // }
-
-function tableMaker(obj) {
-  const tr = document.createElement("tr");
-
-  tr.innerHTML = obj;
-  table.appendChild(tr);
-}
-
-$(document).ready(function() {});

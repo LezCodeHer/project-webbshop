@@ -1,12 +1,9 @@
 // betallningar.html
 
 const table = document.getElementById("table");
-let itemsArray = [];
 
-for (let i = 0; i < localStorage.length; i++) {
-  let index = localStorage.key(i);
-  itemsArray.push(index);
-  let obj = JSON.parse(localStorage.getItem(itemsArray[i]));
+Object.keys(localStorage).forEach(function(key) {
+  let obj = JSON.parse(localStorage.getItem(`${key}`));
 
   let bild = obj.bild;
   let title = obj.title;
@@ -24,19 +21,73 @@ for (let i = 0; i < localStorage.length; i++) {
     beskrivning +
     "</p></td><td><h6>" +
     pris +
-    "</h6></td><td><button class='delete'>Ta bort</button></td>";
+    "</h6></td><td><button class='delete' id='delete-item-key" +
+    `${key}` +
+    "'>Ta bort</button></td>";
 
   tableMaker(output2);
 
-  $(document).ready(function() {    
-    $(".delete").on("click", function() {
+  $(document).ready(function() {
+    $(`#delete-item-key${key}`).on("click", function() {
+      localStorage.removeItem(`orderItem${key}`);
       $(this)
         .parents("tr")
         .remove();
-      localStorage.removeItem(`orderItem${i}`);
+      localStorage.removeItem(key);
+      if (localStorage.length === 0) {
+      $(".clear-ls").css("display", "none");
+    }
+    });
+    $(".clear-ls").on("click", function() {
+      $(this).remove();
+      $("#table").remove();
+      localStorage.clear();
+      if (localStorage.length === 0) {
+        $(".clear-ls").css("display", "none");
+      }
     });
   });
-}
+});
+
+// for (let i = 0; i < localStorage.length; i++) {
+//   // let index = localStorage.key(i);
+//   // itemsArray.push(index);
+//   let obj = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+//   let bild = obj.bild;
+//   let title = obj.title;
+//   let beskrivning = obj.beskrivning;
+//   let pris = obj.pris;
+
+//   let output2 =
+//     "<td><img src=" +
+//     bild +
+//     "></td>" +
+//     "<td><h3>" +
+//     title +
+//     "</h3></td>" +
+//     "<td><p>" +
+//     beskrivning +
+//     "</p></td><td><h6>" +
+//     pris +
+//     "</h6></td><td><button class='delete' id='delete-item-key" +
+//     `${i}` +
+//     "'>Ta bort</button></td>";
+
+//   tableMaker(output2);
+//   $(document).ready(function() {
+//     $(`#delete-item-key${i}`).on("click", function() {
+//       // let k = localStorage.getItem(localStorage.key(i));
+//       console.log(localStorage.key(i));
+//       localStorage.removeItem(`orderItem${i}`);
+//       // console.log(k);
+//       $(this)
+//         .parents("tr")
+//         .remove();
+//       // console.log(localStorage.key(this));
+//     });
+//   });
+// }
 
 function tableMaker(obj) {
   const tr = document.createElement("tr");
@@ -45,10 +96,4 @@ function tableMaker(obj) {
   table.appendChild(tr);
 }
 
-$(document).ready(function() {
-  $("#clear-ls").on("click", function() {
-    $(this).remove();
-    $("#table").remove();
-    localStorage.clear();
-  });
-});
+$(document).ready(function() {});

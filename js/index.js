@@ -38,15 +38,6 @@ function demoCallback(xhr) {
       "<a href='./bestallning.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
   }
   document.getElementById("container1").innerHTML = output1;
-  // localStorage.setItem("obj", JSON.stringify(products));
-
-  // let a = document.getElementsByClassName("index");
-
-  // for (let i = 0; i < item.length; i++) {
-  //   a[i].addEventListener("click", function(e) {
-  //     localStorage.setItem("index", i);
-  //   });
-  // }
 
   let a = document.getElementsByClassName("index");
   let orderItem = [];
@@ -56,7 +47,6 @@ function demoCallback(xhr) {
       orderItem.push(item[i]);
       localStorage.setItem("orderItem"+i, JSON.stringify(orderItem[0]));
     });
-    // localStorage.setItem("index", i);
   }
 }
 

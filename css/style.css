@@ -22,8 +22,8 @@ body {
   justify-content: center;
 }
 .banner img {
-  width: 60%;
-  height: 100%;
+  width: 40%;
+  height: 80%;
 }
 #container1 {
   display: flex;

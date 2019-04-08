@@ -17,12 +17,12 @@ body {
 }
 .banner {
   background-color: white;
-  /* margin: 30px; */
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 .banner img {
-  width: 40%;
+  width: 95%;
   height: 80%;
 }
 #container1 {
@@ -125,4 +125,14 @@ input {
 .list {
   display: flex !important;
   justify-content: flex-end !important;
+}
+#list {
+  width: 20%;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+#table {
+  width: 40%;
+  margin: auto;
 }

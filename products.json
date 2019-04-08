@@ -4,82 +4,106 @@
       "title": "Tabla 1",
       "beskrivning": "Beskrivning1",
       "bild": "./images/banner.jpg",
-      "pris": "1000 kr"
+      "pris": "1000",
+      "totalPris": "1000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 2",
       "beskrivning": "Beskrivning2",
       "bild": "./images/banner.jpg",
-      "pris": "2000 kr"
+      "pris": "2000",
+      "totalPris": "2000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 3",
       "beskrivning": "Beskrivning 3",
       "bild": "./images/banner.jpg",
-      "pris": "3000 kr"
+      "pris": "3000",
+      "totalPris": "3000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 4",
       "beskrivning": "Beskrivning 4",
       "bild": "./images/banner.jpg",
-      "pris": "4000 kr"
+      "pris": "4000",
+      "totalPris": "4000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 5",
       "beskrivning": "Beskrivning 5",
       "bild": "./images/banner.jpg",
-      "pris": "5000 kr"
+      "pris": "5000",
+      "totalPris": "5000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 6",
       "beskrivning": "Beskrivning 6",
       "bild": "./images/banner.jpg",
-      "pris": "6000 kr"
+      "pris": "6000",
+      "totalPris": "6000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 7",
       "beskrivning": "Beskrivning 7",
       "bild": "./images/banner.jpg",
-      "pris": "7000 kr"
+      "pris": "7000",
+      "totalPris": "7000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 8",
       "beskrivning": "Beskrivning 8",
       "bild": "./images/banner.jpg",
-      "pris": "8000 kr"
+      "pris": "8000",
+      "totalPris": "8000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 9",
       "beskrivning": "Beskrivning 9",
       "bild": "./images/banner.jpg",
-      "pris": "9000 kr"
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
     },
 
     {
       "title": "Tabla 10",
       "beskrivning": "Beskrivning 10",
       "bild": "./images/banner.jpg",
-      "pris": "10000 kr"
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
     },
     {
       "title": "Tabla 11",
       "beskrivning": "Beskrivning 11",
       "bild": "./images/banner.jpg",
-      "pris": "11000 kr"
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
     },
     {
       "title": "Tabla 12",
       "beskrivning": "Beskrivning 12",
       "bild": "./images/banner.jpg",
-      "pris": "12000 kr"
+      "pris": "12000",
+      "totalPris": "12000",
+      "antal": "1"
     }
   ]
 }

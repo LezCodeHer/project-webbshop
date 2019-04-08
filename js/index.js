@@ -40,12 +40,12 @@ function demoCallback(xhr) {
   document.getElementById("container1").innerHTML = output1;
 
   let a = document.getElementsByClassName("index");
-  let orderItem = [];
+  // let orderItem = [];
 
   for (let i = 0; i < item.length; i++) {
     a[i].addEventListener("click", function() {
-      orderItem.push(item[i]);
-      localStorage.setItem("orderItem"+i, JSON.stringify(orderItem[0]));
+      // orderItem.push(item[i]);
+      localStorage.setItem("orderItem"+i, JSON.stringify(item[i]));
     });
   }
 }

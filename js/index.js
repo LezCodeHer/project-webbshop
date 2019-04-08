@@ -29,12 +29,12 @@ function demoCallback(xhr) {
       "<h5 id='title' class='card-title'>" +
       item[i].title +
       "</h5>" +
-      "<p class='card-text'>" +
+      "<h6 class='card-text'>" +
       item[i].beskrivning +
-      "</p>" +
-      "<p id='pris' class='card-text'>" +
+      "</h6>" +
+      "<h6 id='pris' class='card-text'>" +
       item[i].pris +
-      "</p>" +
+      "</h6>" +
       "<a href='./bestallning.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
   }
   document.getElementById("container1").innerHTML = output1;
@@ -45,9 +45,7 @@ function demoCallback(xhr) {
   for (let i = 0; i < item.length; i++) {
     a[i].addEventListener("click", function() {
       // orderItem.push(item[i]);
-      localStorage.setItem("orderItem"+i, JSON.stringify(item[i]));
+      localStorage.setItem("orderItem" + i, JSON.stringify(item[i]));
     });
   }
 }
-
-

@@ -9,11 +9,9 @@ $(document).ready(function() {
     $("#total-pris").css("display", "none");
   } else {
     const table = document.getElementsByClassName("table");
-    let nyTotalPris = 0;
 
     Object.keys(localStorage).forEach(function(key) {
       // läggs till produkter till varukorgen
-
       let obj = JSON.parse(localStorage.getItem(`${key}`));
 
       let bild = obj.bild;
@@ -45,10 +43,10 @@ $(document).ready(function() {
         `${key}` +
         `'><i id="trash-icon" class="fa fa-trash-o"></i></button></td>`;
 
+      // anropar funktionen tableMaker som skapar rader och för varje vald produkt
       tableMaker(output2);
 
       // köpa flera produkter av samma sort och beräkna pris
-
       $(`#plus${key}`).on("click", function() {
         x = document.getElementById(`antal${key}`).innerHTML;
         x = ++x;
@@ -57,6 +55,8 @@ $(document).ready(function() {
           "$ " + totalAktuellProdukt(x);
         obj.antal = x;
         localStorage.setItem(`${key}`, JSON.stringify(obj));
+
+        //anropar funktionen total() som beräknar total pris när man ändrar antal produkter
         total();
       });
       $(`#minus${key}`).on("click", function() {
@@ -69,45 +69,19 @@ $(document).ready(function() {
           obj.antal = x;
           localStorage.setItem(`${key}`, JSON.stringify(obj));
         }
+
+        //anropar funktionen total() som beräknar total pris när man ändrar antal produkter
         total();
       });
 
+      // beräkna total pris för bara en produkt
       function totalAktuellProdukt(antal) {
         let tprice = antal * pris;
         obj.totalPris = tprice;
         return tprice;
       }
 
-      // beräkna total pris
-
-      function total() {
-        Object.keys(localStorage).forEach(function(key) {
-          let obj2 = JSON.parse(localStorage.getItem(`${key}`));
-          let x = parseInt(obj2.totalPris);
-          nyTotalPris += x;
-          document.getElementById("total-pris").innerHTML = nyTotalPris;
-          nyTotalPris = x;
-        });
-      }
-
-      total();
-
-      // $(".delete").on("click", function() {
-
-      //   total();
-      //   // Object.keys(localStorage).forEach(function(key) {
-      //   //   let obj2 = JSON.parse(localStorage.getItem(`${key}`));
-      //   //   let x = parseInt(obj2.totalPris);
-      //   //   nyTotalPris += x;
-      //   //   document.getElementById("total-pris").innerHTML = x;
-      //   // });
-
-      //   // totalPris = parseInt(obj.totalPris);
-      //   // document.getElementById("total-pris").innerHTML = totalPris;
-      // });
-
       // delete produkter (en i taget)
-
       $(`#delete-product${key}`).on("click", function() {
         localStorage.removeItem(`orderItem${key}`);
         $(this)
@@ -125,7 +99,6 @@ $(document).ready(function() {
     });
 
     // funktionen tableMaker lägger till rader med olika produkter till varukorgen och beställning sida
-
     function tableMaker(obj) {
       const tr = document.createElement("tr");
 
@@ -136,8 +109,26 @@ $(document).ready(function() {
     }
   }
 
-  // delete alla produkter
+  // beräkna total pris att betala
+  function total() {
+    let nyTotalPris = 0;
+    let x;
+    Object.keys(localStorage).forEach(function(key) {
+      let obj2 = JSON.parse(localStorage.getItem(`${key}`));
+      x = parseInt(obj2.totalPris);
+      nyTotalPris += x;
+    });
+    document.getElementById("total-pris").innerHTML = nyTotalPris;
+  }
 
+  total();
+
+  // beräkna total pris när man raderar en objekt på pris att betala
+  $(".delete").on("click", function() {
+    total();
+  });
+
+  // delete alla produkter
   $(".clear-ls").on("click", function() {
     $(".table").remove();
     localStorage.clear();

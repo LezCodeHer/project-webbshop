@@ -107,10 +107,16 @@ form {
   text-align: left;
 }
 #message,
-#msgEmail {
+#msgEmail, #msgTel, #msgStreet, #msgZip, #msgCity, #msgCountry {
   color: red;
   padding: 0 10px;
   display: none;
+  font-family: 'Lora', serif-serif;
+  font-size: 16px;
+}
+input, label{
+  font-family: 'Lora', serif-serif;
+  font-size: 20px;
 }
 
 #footer {

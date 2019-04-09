@@ -109,18 +109,18 @@ $(document).ready(function() {
           $("#total-pris").css("display", "none");
         }
       });
+      // funktionen tableMaker lägger till rader med olika produkter till varukorgen och beställning sida
+  
+      function tableMaker(obj) {
+        const tr = document.createElement("tr");
+  
+        for (let i = 0; i < table.length; i++) {
+          tr.innerHTML = obj;
+          table[i].appendChild(tr);
+        }
+      }
     });
 
-    // funktionen tableMaker lägger till rader med olika produkter till varukorgen och beställning sida
-
-    function tableMaker(obj) {
-      const tr = document.createElement("tr");
-
-      for (let i = 0; i < table.length; i++) {
-        tr.innerHTML = obj;
-        table[i].appendChild(tr);
-      }
-    }
   }
 
   // delete alla produkter

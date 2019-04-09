@@ -87,8 +87,7 @@ $(document).ready(function() {
       function total() {
         totalPris = parseInt(obj.totalPris);
         nyTotalPris += totalPris;
-        nyTotalPris -= totalPris;
-        console.log(nyTotalPris);
+        // console.log(nyTotalPris);
         document.getElementById("total-pris").innerHTML = nyTotalPris;
         // totalPris = nyTotalPris;
       }
@@ -112,24 +111,22 @@ $(document).ready(function() {
       });
     });
 
-    // funktionen tableMaker lägger till rader med olika produkter till tabellen
+    // funktionen tableMaker lägger till rader med olika produkter till varukorgen och beställning sida
 
     function tableMaker(obj) {
       const tr = document.createElement("tr");
 
-      for (let i = 0; i < localStorage.length; i++) {
-          
+      for (let i = 0; i < table.length; i++) {
+        tr.innerHTML = obj;
+        table[i].appendChild(tr);
       }
-
-      tr.innerHTML = obj;
-      table.appendChild(tr);
     }
   }
 
   // delete alla produkter
 
   $(".clear-ls").on("click", function() {
-    $("#table").remove();
+    $(".table").remove();
     localStorage.clear();
 
     $(this)

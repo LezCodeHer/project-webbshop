@@ -22,22 +22,17 @@
     <title>Hem</title>
     <style>
       #overlay {
-        position: fixed; /* Sit on top of the page content */
-        display: none; /* Hidden by default */
-        width: 100%; /* Full width (cover the whole page) */
-        height: 100%; /* Full height (cover the whole page) */
-        top: 0;
-        left: 0;
+        position: fixed; 
+        display: none; 
+        width: 50%;
+        height: 50%;
+        top: 60px;
+        left: auto;
         right: 0;
         bottom: 0;
-        background-color: rgba(
-          0,
-          0,
-          0,
-          0.5
-        ); /* Black background with opacity */
-        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-        cursor: pointer; /* Add a pointer on hover */
+        background-color: white;
+        z-index: 2;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -78,9 +73,9 @@
       <!-------- varukorg --------->
 
       <div class="btn-group">
-        <i id="basket-icon" class="fa fa-shopping-basket"></i>
+        <i id="basket-icon" class="fa fa-shopping-basket" onclick="on()"></i>
 
-        <div id="overlay">
+        <div id="overlay" onclick="off()">
           <table class="table"></table>
           <span id="total-pris"></span>
           <button class="clear-ls">Clear all</button>
@@ -183,5 +178,14 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
   </body>
 </html>

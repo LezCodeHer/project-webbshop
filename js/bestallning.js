@@ -57,7 +57,7 @@ $(document).ready(function() {
           "$ " + totalAktuellProdukt(x);
         obj.antal = x;
         localStorage.setItem(`${key}`, JSON.stringify(obj));
-        // total();
+        total();
       });
       $(`#minus${key}`).on("click", function() {
         x = document.getElementById(`antal${key}`).innerHTML;
@@ -69,7 +69,7 @@ $(document).ready(function() {
           obj.antal = x;
           localStorage.setItem(`${key}`, JSON.stringify(obj));
         }
-        // total();
+        total();
       });
 
       function totalAktuellProdukt(antal) {
@@ -80,28 +80,31 @@ $(document).ready(function() {
 
       // beräkna total pris
 
-      // $(`#plus${key}, #minus${key}, #delete-product${key}`).on(
-      //   "click",
-      //   function() {
-      //     Object.keys(localStorage).forEach(function(key) {
-      //       let obj2 = JSON.parse(localStorage.getItem(`${key}`));
-      //       obj2.totalPris += obj2.totalPris;
-      //       console.log(obj2.totalPris);
-      //     });
-      //   }
-      // );
+      function total() {
+        Object.keys(localStorage).forEach(function(key) {
+          let obj2 = JSON.parse(localStorage.getItem(`${key}`));
+          let x = parseInt(obj2.totalPris);
+          nyTotalPris += x;
+          document.getElementById("total-pris").innerHTML = nyTotalPris;
+          nyTotalPris = x;
+        });
+      }
 
-      // totalPris = parseInt(obj.totalPris);
-      // nyTotalPris += totalPris;
-      // document.getElementById("total-pris").innerHTML = nyTotalPris;
+      total();
 
-      // function total() {
-      //   totalPris = parseInt(obj.totalPris);
-      //   totalPris += totalPris;
-      //   document.getElementById("total-pris").innerHTML = totalPris;
-      //   totalPris = 0;
-      // }
-      // total();
+      // $(".delete").on("click", function() {
+
+      //   total();
+      //   // Object.keys(localStorage).forEach(function(key) {
+      //   //   let obj2 = JSON.parse(localStorage.getItem(`${key}`));
+      //   //   let x = parseInt(obj2.totalPris);
+      //   //   nyTotalPris += x;
+      //   //   document.getElementById("total-pris").innerHTML = x;
+      //   // });
+
+      //   // totalPris = parseInt(obj.totalPris);
+      //   // document.getElementById("total-pris").innerHTML = totalPris;
+      // });
 
       // delete produkter (en i taget)
 

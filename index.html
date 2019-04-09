@@ -20,27 +20,12 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Hem</title>
-    <style>
-      #overlay {
-        position: fixed; 
-        display: none; 
-        width: 50%;
-        height: 50%;
-        top: 60px;
-        left: auto;
-        right: 0;
-        bottom: 0;
-        background-color: white;
-        z-index: 2;
-        cursor: pointer;
-      }
-    </style>
   </head>
   <body>
     <!------------ navbar -------->
     <nav
       class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-      style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important;"
+      style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important; height: 60px;"
     >
       <a id="store-name" class="navbar-brand" href="#">LIFE HACKS</a>
       <button
@@ -57,9 +42,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -75,17 +58,25 @@
       <div class="btn-group">
         <i id="basket-icon" class="fa fa-shopping-basket" onclick="on()"></i>
 
-        <div id="overlay" onclick="off()">
+        <div id="overlay">
           <table class="table"></table>
           <span id="total-pris"></span>
           <button class="clear-ls">Clear all</button>
+          <a href="./bestallning.html" type="button">Go till kassan</a>
         </div>
+
+        <!-- <div id="varukorg" class="dropdown-menu dropdown-menu-right">
+          <table class="table"></table>
+          <span id="total-pris"></span>
+          <button class="clear-ls">Clear all</button>
+          <a href="./bestallning.html" type="button">Go till kassan</a>
+        </div> -->
       </div>
     </nav>
 
     <!-------- banner image -------->
 
-    <div class="banner">
+    <div class="banner" onclick="off()">
       <!-- <img src="images/banner.jpg" alt="banner"> -->
       <img src="images/banner/banner-longJPEG-letters.jpg" alt="banner" />
     </div>
@@ -100,15 +91,6 @@
 
     <!---------- Footer ---------->
 
-    <!-- <footer
-      id="footer"
-      class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"
-      style="position: relative;"
-    >
-      <div class="github-icon">
-        <i class="fa fa-github"></i>
-      </div>
-    </footer> -->
     <!-- Footer -->
     <footer id="footer" class="page-footer font-small teal pt-4">
       <!-- Footer Text -->
@@ -163,6 +145,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/bestallning.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

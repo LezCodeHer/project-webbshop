@@ -35,21 +35,17 @@ function demoCallback(xhr) {
       "<h6 id='pris' class='card-text'>" +
       item[i].pris +
       "</h6>" +
-      "<a href='./index.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
+      "<a href='./bestallning.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
   }
   document.getElementById("container1").innerHTML = output1;
 
   let a = document.getElementsByClassName("index");
+  // let orderItem = [];
 
   for (let i = 0; i < item.length; i++) {
     a[i].addEventListener("click", function() {
+      // orderItem.push(item[i]);
       localStorage.setItem("orderItem" + i, JSON.stringify(item[i]));
     });
   }
 }
-
-// $(document).ready(function() {
-//   $(document).on("click", ".dropdown-menu", function(e) {
-//     e.stopPropagation();
-//   });
-// });

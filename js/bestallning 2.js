@@ -29,15 +29,15 @@ $(document).ready(function() {
         "<td><h3>" +
         title +
         "</h3></td>" +
-        `<td><a href='#' type="button" class="total" id="minus` +
+        `<td><input type="button" class="total" id="minus` +
         `${key}` +
-        `">-</a><span class="antal" id="antal` +
+        `" value="-" /><span class="antal" id="antal` +
         `${key}` +
         `">` +
         antal +
-        `</span><a href='#' type="button" class="total" id="plus` +
+        `</span><input type="button" class="total" id="plus` +
         `${key}` +
-        `">+</a></td><span id="tprice` +
+        `" value="+" /></td><span id="tprice` +
         `${key}` +
         `">` +
         totalPris +
@@ -57,7 +57,7 @@ $(document).ready(function() {
           "$ " + totalAktuellProdukt(x);
         obj.antal = x;
         localStorage.setItem(`${key}`, JSON.stringify(obj));
-        // total();
+        total();
       });
       $(`#minus${key}`).on("click", function() {
         x = document.getElementById(`antal${key}`).innerHTML;
@@ -69,7 +69,7 @@ $(document).ready(function() {
           obj.antal = x;
           localStorage.setItem(`${key}`, JSON.stringify(obj));
         }
-        // total();
+        total();
       });
 
       function totalAktuellProdukt(antal) {
@@ -80,28 +80,18 @@ $(document).ready(function() {
 
       // beräkna total pris
 
-      // $(`#plus${key}, #minus${key}, #delete-product${key}`).on(
-      //   "click",
-      //   function() {
-      //     Object.keys(localStorage).forEach(function(key) {
-      //       let obj2 = JSON.parse(localStorage.getItem(`${key}`));
-      //       obj2.totalPris += obj2.totalPris;
-      //       console.log(obj2.totalPris);
-      //     });
-      //   }
-      // );
+      // $(`.total`).on("click", function() {
+      //   total();
+      // });
 
-      // totalPris = parseInt(obj.totalPris);
-      // nyTotalPris += totalPris;
-      // document.getElementById("total-pris").innerHTML = nyTotalPris;
-
-      // function total() {
-      //   totalPris = parseInt(obj.totalPris);
-      //   totalPris += totalPris;
-      //   document.getElementById("total-pris").innerHTML = totalPris;
-      //   totalPris = 0;
-      // }
-      // total();
+      function total() {
+        totalPris = parseInt(obj.totalPris);
+        nyTotalPris += totalPris;
+        // console.log(nyTotalPris);
+        document.getElementById("total-pris").innerHTML = nyTotalPris;
+        // totalPris = nyTotalPris;
+      }
+      total();
 
       // delete produkter (en i taget)
 
@@ -119,18 +109,18 @@ $(document).ready(function() {
           $("#total-pris").css("display", "none");
         }
       });
+      // funktionen tableMaker lägger till rader med olika produkter till varukorgen och beställning sida
+  
+      function tableMaker(obj) {
+        const tr = document.createElement("tr");
+  
+        for (let i = 0; i < table.length; i++) {
+          tr.innerHTML = obj;
+          table[i].appendChild(tr);
+        }
+      }
     });
 
-    // funktionen tableMaker lägger till rader med olika produkter till varukorgen och beställning sida
-
-    function tableMaker(obj) {
-      const tr = document.createElement("tr");
-
-      for (let i = 0; i < table.length; i++) {
-        tr.innerHTML = obj;
-        table[i].appendChild(tr);
-      }
-    }
   }
 
   // delete alla produkter

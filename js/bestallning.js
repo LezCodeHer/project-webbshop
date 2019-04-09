@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("#total-pris").css("display", "none");
   } else {
     const table = document.getElementsByClassName("table");
-    let nyTotalPris = 0;
+    // let nyTotalPris = 0;
 
     Object.keys(localStorage).forEach(function(key) {
       // läggs till produkter till varukorgen
@@ -57,7 +57,6 @@ $(document).ready(function() {
           "$ " + totalAktuellProdukt(x);
         obj.antal = x;
         localStorage.setItem(`${key}`, JSON.stringify(obj));
-        total();
       });
       $(`#minus${key}`).on("click", function() {
         x = document.getElementById(`antal${key}`).innerHTML;
@@ -69,7 +68,6 @@ $(document).ready(function() {
           obj.antal = x;
           localStorage.setItem(`${key}`, JSON.stringify(obj));
         }
-        total();
       });
 
       function totalAktuellProdukt(antal) {
@@ -80,16 +78,20 @@ $(document).ready(function() {
 
       // beräkna total pris
 
-      $(`#plus${key}, #minus${key}, #delete-product${key}`).on(
-        "click",
-        function() {
-          Object.keys(localStorage).forEach(function(key) {
-            let obj2 = JSON.parse(localStorage.getItem(`${key}`));
-            obj2.totalPris += obj2.totalPris;
-            console.log(obj2.totalPris);
-          });
-        }
-      );
+      // $(`#plus${key}, #minus${key}, #delete-product${key}`).on(
+      //   "click",
+      //   function() {
+      //     // Object.keys(localStorage).forEach(function(key) {
+      //     //   let obj2 = JSON.parse(localStorage.getItem(`${key}`));
+      //     //   obj2.totalPris += obj2.totalPris;
+      //     //   console.log(obj2.totalPris);
+      //     // });
+
+      //     totalPris = parseInt(obj.totalPris);
+      //     nyTotalPris += totalPris;
+      //     document.getElementById("total-pris").innerHTML = nyTotalPris;
+      //   }
+      // );
 
       // totalPris = parseInt(obj.totalPris);
       // nyTotalPris += totalPris;
@@ -99,7 +101,6 @@ $(document).ready(function() {
       //   totalPris = parseInt(obj.totalPris);
       //   totalPris += totalPris;
       //   document.getElementById("total-pris").innerHTML = totalPris;
-      //   totalPris = 0;
       // }
       // total();
 

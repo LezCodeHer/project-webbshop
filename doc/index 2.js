@@ -35,35 +35,17 @@ function demoCallback(xhr) {
       "<h6 id='pris' class='card-text'>" +
       item[i].pris +
       "</h6>" +
-      "<a href='./index.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
+      "<a href='./bestallning.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
   }
   document.getElementById("container1").innerHTML = output1;
 
   let a = document.getElementsByClassName("index");
+  // let orderItem = [];
 
   for (let i = 0; i < item.length; i++) {
     a[i].addEventListener("click", function() {
+      // orderItem.push(item[i]);
       localStorage.setItem("orderItem" + i, JSON.stringify(item[i]));
-      antalProdukter();
     });
   }
 }
-
-// beräkna antal produkter i varukorgen
-function antalProdukter() {
-  let antal = 0;
-  let x;
-  Object.keys(localStorage).forEach(function(key) {
-    let obj3 = JSON.parse(localStorage.getItem(`${key}`));
-    x = parseInt(obj3.antal);
-    antal += x;
-  });
-  document.getElementById("antal-produkter").innerHTML = antal;
-}
-
-antalProdukter();
-
-
-
-
-

@@ -1,109 +1,309 @@
 {
   "items": [
     {
-      "title": "Tabla 1",
+      "title": "HAPPINESS",
       "beskrivning": "Beskrivning1",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/01-happiness-full.jpg",
       "pris": "1000",
       "totalPris": "1000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 2",
+      "title": "TIME",
       "beskrivning": "Beskrivning2",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/02-time.jpg",
       "pris": "2000",
       "totalPris": "2000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 3",
+      "title": "HEALTH",
       "beskrivning": "Beskrivning 3",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/03-health.jpg",
       "pris": "3000",
       "totalPris": "3000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 4",
+      "title": "FRIENDSHIP",
       "beskrivning": "Beskrivning 4",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/04-friendship.jpg",
       "pris": "4000",
       "totalPris": "4000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 5",
+      "title": "AFFECTION",
       "beskrivning": "Beskrivning 5",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/05-affection01.jpg",
       "pris": "5000",
       "totalPris": "5000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 6",
+      "title": "IDEA",
       "beskrivning": "Beskrivning 6",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/06-a-idea.jpg",
       "pris": "6000",
       "totalPris": "6000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 7",
+      "title": "LUCK",
       "beskrivning": "Beskrivning 7",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/06-luck-clove.jpg",
       "pris": "7000",
       "totalPris": "7000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 8",
+      "title": "LOVE",
       "beskrivning": "Beskrivning 8",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/07-b-love-fire.jpg",
       "pris": "8000",
       "totalPris": "8000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 9",
+      "title": "KARMA",
       "beskrivning": "Beskrivning 9",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/07-karma.jpg",
       "pris": "9000",
       "totalPris": "9000",
       "antal": "1"
     },
 
     {
-      "title": "Tabla 10",
+      "title": "DREAM",
       "beskrivning": "Beskrivning 10",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/08-dreamtrue.jpg",
       "pris": "10000",
       "totalPris": "10000",
       "antal": "1"
     },
     {
-      "title": "Tabla 11",
+      "title": "MENTAL HEALTH",
       "beskrivning": "Beskrivning 11",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/09-health-mental.jpg",
       "pris": "11000",
       "totalPris": "11000",
       "antal": "1"
     },
     {
-      "title": "Tabla 12",
+      "title": "PHYSICAL HEALTH",
       "beskrivning": "Beskrivning 12",
-      "bild": "./images/banner.jpg",
+      "bild": "./images/10-health-physical.jpg",
       "pris": "12000",
       "totalPris": "12000",
       "antal": "1"
-    }
+    },
+    {
+      "title": "SLEEP",
+      "beskrivning": "Beskrivning 9",
+      "bild": "./images/11-sleepstar.jpg",
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
+    },
+
+    {
+      "title": "MOTIVATION",
+      "beskrivning": "Beskrivning 10",
+      "bild": "./images/12-motivation.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
+    },
+    {
+      "title": "SKILL",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/13-skill.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
+      "title": "KNOWLEDGE",
+      "beskrivning": "Beskrivning 12",
+      "bild": "./images/14-knowledge.jpg",
+      "pris": "12000",
+      "totalPris": "12000",
+      "antal": "1"
+    },
+    {
+      "title": "INSPIRATION",
+      "beskrivning": "Beskrivning 9",
+      "bild": "./images/15-inspiration.jpg",
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
+    },
+
+    {
+      "title": "TALENT",
+      "beskrivning": "Beskrivning 10",
+      "bild": "./images/16-a-talent.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
+    },
+    {
+      "title": "HELP & SUPPORT",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/16-support.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
+      "title": "ANGER",
+      "beskrivning": "Beskrivning 12",
+      "bild": "./images/17-anger.jpg",
+      "pris": "12000",
+      "totalPris": "12000",
+      "antal": "1"
+    },
+    {
+      "title": "ATTENTION",
+      "beskrivning": "Beskrivning 9",
+      "bild": "./images/18-attention-white.jpg",
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
+    },
+
+    {
+      "title": "GUILT",
+      "beskrivning": "Beskrivning 10",
+      "bild": "./images/19-a-guiltcake.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
+    },
+    {
+      "title": "RELAX",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/19-relax.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
+      "title": "FRESH START",
+      "beskrivning": "Beskrivning 12",
+      "bild": "./images/20-freshstart.jpg",
+      "pris": "12000",
+      "totalPris": "12000",
+      "antal": "1"
+    },
+    {
+      "title": "ONE MORE TRY",
+      "beskrivning": "Beskrivning 9",
+      "bild": "./images/21-tryagain.jpg",
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
+    },
+
+    {
+      "title": "STOP TIME ",
+      "beskrivning": "Beskrivning 10",
+      "bild": "./images/22-stoptime.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
+    },
+    {
+      "title": "ENERGY",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/23-workhard.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
+      "title": "REVENGE",
+      "beskrivning": "Beskrivning 12",
+      "bild": "./images/24-paybackrevenge.jpg",
+      "pris": "12000",
+      "totalPris": "12000",
+      "antal": "1"
+    },
+    {
+      "title": "PERSONALITY",
+      "beskrivning": "Beskrivning 9",
+      "bild": "./images/25-personalitycolor.jpg",
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
+    },
+
+    {
+      "title": "TRUST",
+      "beskrivning": "Beskrivning 10",
+      "bild": "./images/26-trust.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
+    },
+    {
+      "title": "FEAR",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/26-u-scared.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
+      "title": "SADNESS",
+      "beskrivning": "Beskrivning 12",
+      "bild": "./images/27-a-sadness.jpg",
+      "pris": "12000",
+      "totalPris": "12000",
+      "antal": "1"
+    },
+    {
+      "title": "SPOONING",
+      "beskrivning": "Experience the feeling of a great spooning. Choose from being the big or the small spoon",
+      "bild": "./images/27-spooning.jpg",
+      "pris": "9000",
+      "totalPris": "9000",
+      "antal": "1"
+    },
+
+    {
+      "title": "COLD ",
+      "beskrivning": "Choose from a light or a heavy cold",
+      "bild": "./images/28-cold.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
+      "antal": "1"
+    },
+    {
+      "title": "STRENGTH",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/29-strength-anim.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
+      "title": "XXX ",
+      "beskrivning": "Beskrivning 11",
+      "bild": "./images/.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    }        
   ]
 }
+
+

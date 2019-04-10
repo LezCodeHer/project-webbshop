@@ -29,7 +29,7 @@ function demoCallback(xhr) {
       "<h5 id='title' class='card-title'>" +
       item[i].title +
       "</h5>" +
-      "<h6 class='card-text'>" +
+      "<h6 class='card-text card-content'>" +
       item[i].beskrivning +
       "</h6>" +
       "<h6 id='pris' class='card-text'>" +

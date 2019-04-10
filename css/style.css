@@ -172,6 +172,13 @@ input {
   padding: 0;
   list-style: none;
 }
+#table1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  width: 50%;
+}
+
+
 #table2 {
   width: 40%;
   margin: auto;

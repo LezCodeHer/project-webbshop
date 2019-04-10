@@ -128,22 +128,19 @@ $(document).ready(function() {
     });
 
     $("#submit-btn").on("click", function() {
-      // $("#table2").remove();
       $("#form").remove();
       localStorage.clear();
-      // $("#total-pris").after(
-      //   "<br /><span>Thank you for your purchase. Your order will be delivered shortly.</span>"
-      // );
       $(".clear-ls").css("display", "none");
       $("footer").css("margin-top", "180px");
       $("td").css("border", "none");
       $(".total").css("display", "none");
       $(".delete").css("display", "none");
       $(".order-style-rubrik").css("display", "none");
+      $("#total-pris").css("margin", "0 44%");
       $("#order-style-rubrik1")
         .css("display", "none")
         .after(
-          "<span>Thank you for your purchase. <br />Your order will be delivered shortly.</span>"
+          "<span style='font-size: 22px; margin: 3px;'>Thank you for your purchase. <br />Your order will be delivered shortly.</span>"
         );
 
       $(this).css("display", "none");

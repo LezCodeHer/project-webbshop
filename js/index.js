@@ -19,6 +19,8 @@ function demoCallback(xhr) {
 
   let item = products.items;
   let output1 = "";
+
+  // visa produkter i hemsidan
   for (let i = 0; i < item.length; i++) {
     output1 +=
       "<div id='card' class='card' style='width: 12rem;'>" +
@@ -35,12 +37,15 @@ function demoCallback(xhr) {
       "<h6 id='pris' class='card-text'>$ " +
       item[i].pris +
       "</h6>" +
-      "<a href='./index.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
+      "<a href='' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
   }
   document.getElementById("container1").innerHTML = output1;
 
+  // array med alla länkar
   let a = document.getElementsByClassName("index");
 
+  /* for loop som går igenom alla länkar (knappar) i varje produkt (objekt) 
+  i json filen för att sedan spara de i local storage */
   for (let i = 0; i < item.length; i++) {
     a[i].addEventListener("click", function() {
       localStorage.setItem("orderItem" + i, JSON.stringify(item[i]));
@@ -49,24 +54,18 @@ function demoCallback(xhr) {
   }
 }
 
-// beräkna antal produkter i varukorgen
-function antalProdukter() {
-  let antal = 0;
-  let x;
-  Object.keys(localStorage).forEach(function(key) {
-    let obj3 = JSON.parse(localStorage.getItem(`${key}`));
-    x = parseInt(obj3.antal);
-    antal += x;
-  });
-  document.getElementById("antal-produkter").innerHTML = antal;
-}
-
-antalProdukter();
+// overlay on off
 
 function overlayOnOff() {
   if (document.getElementById("overlay").style.display === "block") {
     document.getElementById("overlay").style.display = "none";
   } else {
     document.getElementById("overlay").style.display = "block";
+  }
+}
+
+function off() {
+  if (document.getElementById("overlay").style.display === "block") {
+    document.getElementById("overlay").style.display = "none";
   }
 }

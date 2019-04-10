@@ -52,7 +52,8 @@ body {
   justify-content: center;
   width: 1100px;
   margin: 50px auto;
-  font-family: "Lora", serif-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2px;
 }
 .title4 {
   font-size: 40px;
@@ -72,6 +73,9 @@ h5 {
   margin: 10px;
   width: 250px !important;
   box-shadow: 0px 8px 8px 0px #928d8d !important;
+}
+.card-content{
+  height: 75px;
 }
 .jsonlink {
   width: 10%;
@@ -143,9 +147,9 @@ label {
 }
 #footer {
   background-color: #54b7b2 !important;
-  font-size: 16px;
+  font-size: 15px;
   color: white;
-  font-family: "Lora", serif-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: lighter;
 }
 #footer-content {
@@ -200,17 +204,7 @@ input {
   width: 15px;
   text-align: center;
 }
-#antal-produkter {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 18px;
-  font-weight: lighter;
-  color: white;
-  cursor: pointer;
-  margin-right: 30px;
-  display: flex;
-  align-items: center;
-}
-.github-icon {
+.github-icon{
   font-family: "Poiret One", cursive;
   color: white;
   font-size: 30px;
@@ -219,6 +213,12 @@ input {
   font-size: 40px;
   margin-left: auto;
 }
+
+.github-icon a{
+  color: white;
+  text-decoration: none;
+}
+
 .nav-item {
   margin: 0 20px;
 }

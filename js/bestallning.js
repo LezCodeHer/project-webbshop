@@ -22,27 +22,27 @@ $(document).ready(function() {
       let totalPris = obj.totalPris;
 
       let output2 =
-        "<td><img src=" +
+        "<td style='transform: unset;'><img src=" +
         bild +
         "></td>" +
-        "<td><h6 class='title-varukorg'>" +
+        "<td><h6 class='title-varukorg' style='margin:0;'>" +
         title +
         "</h6></td>" +
-        `<td><a href='#' type="button" class="total style-buttons" id="minus` +
+        `<td><a href='#' class="total style-buttons" id="minus` +
         `${key}` +
-        `">-</a><span class="antal style-button" id="antal` +
+        `">&minus;</a><span class="antal style-buttons" id="antal` +
         `${key}` +
         `">` +
         antal +
-        `</span><a href='#' type="button" class="total style-button" id="plus` +
+        `</span><a href='#' class="total style-buttons" id="plus` +
         `${key}` +
-        `">+</a></td><span id="tprice` +
+        `">+</a></td><td><span id="tprice` +
         `${key}` +
-        `">` +
+        `">$ ` +
         totalPris +
-        `</span><td><a class='delete' id='delete-product` +
+        `</span></td><td style='transform: unset;'><a class='delete' id='delete-product` +
         `${key}` +
-        `'><i id="trash-icon" class="fa fa-trash-o"></i></button></td>`;
+        `'><i style='margin-top: 10px;' id="trash-icon" class="fa fa-trash-o"></i></a></td>`;
 
       // anropar funktionen tableMaker som skapar rader och för varje vald produkt
       tableMaker(output2);
@@ -160,7 +160,7 @@ $(document).ready(function() {
       nyTotalPris += x;
     });
     document.getElementById("total-pris").innerHTML =
-      "Total Price: &nbsp;&nbsp;" + nyTotalPris;
+      "Total Price: &nbsp;&nbsp;$ " + nyTotalPris;
   }
 
   total();

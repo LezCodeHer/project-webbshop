@@ -23,7 +23,7 @@
     <title>Hem</title>
   </head>
   <body>
-    <!------------ navbar -------->
+    <!-- navbar -->
     <nav
       class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
       style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important; height: 60px;"
@@ -54,30 +54,30 @@
         </ul>
       </div>
 
-      <!-------- varukorg --------->
+      <!-- varukorg -->
 
       <div class="btn-group">
-        <i id="basket-icon" class="fa fa-shopping-basket" onclick="on()"></i>
+        <i id="basket-icon" class="fa fa-shopping-basket" onclick="overlayOnOff()"></i>
         <div id="antal-produkter"></div>
 
         <div id="overlay">
-          <h5 class="cart-title">Here's what's in your cart</h5>
+          <!-- <h5 class="cart-title">Here's what's in your cart</h5> -->
           <table class="table" id="table1"></table>
-          <span id="total-pris" style="font-family: Arial, Helvetica, sans-serif !important; font-size: 18px; font-weight: lighter;"></span><br>
+          <span id="total-pris"></span>
           <button class="clear-ls">Empty Cart</button><br>
           <a href="./bestallning.html" class="check-out">Go to Check Out</a>
         </div>
       </div>
     </nav>
 
-    <!-------- banner image -------->
+    <!-- banner image -->
 
     <div class="banner" onclick="off()">
       <!-- <img src="images/banner.jpg" alt="banner"> -->
       <img src="images/banner/banner-longJPEG-letters.jpg" alt="banner" />
     </div>
 
-    <!---------- products json  --------->
+    <!-- products json -->
 
     <h4 class="title4">Pick and Choose and Be the Best YOU !</h4>
     <div id="container1"></div>
@@ -85,7 +85,7 @@
       <a href="./products.json">JSON fil länk</a>
     </div>
 
-    <!---------- Footer ---------->
+    <!-- Footer -->
 
     <footer id="footer" class="page-footer font-small teal pt-4">
       <!-- Footer Text -->
@@ -93,19 +93,19 @@
         <!-- Grid row -->
         <div class="row">
           <!-- Grid column -->
-          <div id="footer-content" class="col-md-6 mt-md-0 mt-3">
+          <div class="footer-content col-md-6 mt-md-0 mt-3">
             <h5 class="text-uppercase">SHIPPING & PAYMENT</h5>
             <hr>
-              <li>Free Worldwide Shipping</li>
-              <li>30 Days Returns</li>
-              <li>Secure Payments</li>
+              <p>Free Worldwide Shipping</p>
+              <p>30 Days Returns</p>
+              <p>Secure Payments</p>
            </div>
           <!-- Grid column -->
 
           <hr class="clearfix w-100 d-md-none pb-3" />
 
           <!-- Grid column -->
-          <div id="footer-content" class="col-md-6 mb-md-0 mb-3">
+          <div class="footer-content col-md-6 mb-md-0 mb-3">
             <h5 class="text-uppercase">GET IN TOUCH</h5>
             <hr>
               PHONE: 0046 123 456 7 <br>
@@ -126,7 +126,7 @@
       ©2019 Copyright || Valesca and Therése
     </div>
 
-    <!-------- js files --------->
+    <!-- js files -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="js/index.js"></script>
@@ -147,12 +147,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function on() {
-        document.getElementById("overlay").style.display = "block";
-      }
-
       function off() {
-        document.getElementById("overlay").style.display = "none";
+        if (document.getElementById("overlay").style.display === "block") {
+          document.getElementById("overlay").style.display = "none";
+        }
       }
     </script>
   </body>

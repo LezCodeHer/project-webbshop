@@ -23,7 +23,7 @@
   </head>
 
   <body id="bestallning-body">
-    <!--------- Header --------->
+    <!--Header-->
 
     <nav
       class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
@@ -34,7 +34,6 @@
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        ∑
         data-target="#navbarCollapse"
         aria-controls="navbarCollapse"
         aria-expanded="false"
@@ -67,24 +66,24 @@
     <span id="total-pris"></span>
     <button class="clear-ls">Clear all</button>
 
-    <!---------------- Order form ------------->
+    <!--Order form -->
 
     <h4 class="order-style-rubrik" style="text-align: center; margin: 50px;">Shipping</h4>
     <form id="form">
       <div class="form-row">
         <div class="form-group col-md-12">
-          <label for="user">First and last name*</label><br />
+          <label for="inputName">First and last name*</label><br />
           <input
             id="inputName"
+            type="text"
             class="form-control"
-            type="name"
             placeholder="First and Last name"
             required
           />
           <p id="message"></p>
         </div>
         <div class="form-group col-md-12">
-          <label for="example-tel-input">Telephone*</label>
+          <label for="inputTel">Telephone*</label>
           <input
             id="inputTel"
             class="form-control"
@@ -94,7 +93,7 @@
           <p id="msgTel"></p>
         </div>
         <div class="form-group col-md-6">
-          <label for="email">Email*</label>
+          <label for="inputEmail">Email*</label>
           <input
             id="inputEmail"
             type="email"
@@ -109,7 +108,7 @@
       <h4>Delivery Address:</h4>
       <br />
       <div class="form-group">
-        <label for="inputAddress">Street*</label>
+        <label for="inputStreet">Street*</label>
         <input
           id="inputStreet"
           type="text"
@@ -143,7 +142,7 @@
           <p id="msgCity"></p>
         </div>
         <div class="form-group col-md-4">
-          <label for="inputState">Country*</label>
+          <label for="inputCountry">Country*</label>
           <input
             id="inputCountry"
             type="text"
@@ -157,7 +156,7 @@
       <div class="form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
             Agree to terms and conditions
           </label>
         </div>
@@ -165,14 +164,13 @@
       <a
         href="#"
         id="submit-btn"
-        type="submit"
         class="btn btn-primary"
       >
         COMPLETE ORDER
       </a>
     </form>
 
-        <!---------- Footer ---------->
+        <!-- Footer -->
 
         <footer id="footer" class="page-footer font-small teal pt-4">
             <!-- Footer Text -->
@@ -180,19 +178,19 @@
               <!-- Grid row -->
               <div class="row">
                 <!-- Grid column -->
-                <div id="footer-content" class="col-md-6 mt-md-0 mt-3">
+                <div class="footer-content col-md-6 mt-md-0 mt-3">
                   <h5 class="text-uppercase">SHIPPING & PAYMENT</h5>
                   <hr>
-                    <li>Free Worldwide Shipping</li>
-                    <li>30 Days Returns</li>
-                    <li>Secure Payments</li>
+                    <p>Free Worldwide Shipping</p>
+                    <p>30 Days Returns</p>
+                    <p>Secure Payments</p>
                  </div>
                 <!-- Grid column -->
       
                 <hr class="clearfix w-100 d-md-none pb-3" />
       
                 <!-- Grid column -->
-                <div id="footer-content" class="col-md-6 mb-md-0 mb-3">
+                <div  class="footer-content col-md-6 mb-md-0 mb-3">
                   <h5 class="text-uppercase">GET IN TOUCH</h5>
                   <hr>
                     PHONE: 0046 123 456 7 <br>
@@ -213,7 +211,7 @@
             ©2019 Copyright || Valesca and Therése
           </div>
 
-    <!------- Javascript files --------->
+    <!-- Javascript files -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/form.js"></script>

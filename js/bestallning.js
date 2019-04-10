@@ -4,8 +4,9 @@ $(document).ready(function() {
   if (localStorage.length === 0) {
     $(".clear-ls")
       .css("display", "none")
-      .after("<span>Din varukorg är tom</span>");
-
+      .after("<span style='font-size:20px;'>Din varukorg är tom</span>");
+    $(".check-out").css("display", "none");
+    $(".cart-title").css("display", "none");
     $("#total-pris").css("display", "none");
   } else {
     const table = document.getElementsByClassName("table");
@@ -93,9 +94,11 @@ $(document).ready(function() {
         if (localStorage.length === 0) {
           $(".clear-ls")
             .css("display", "none")
-            .after("<span>Din varukorg är tom</span>");
+            .after("<span style='font-size:20px;'>Din varukorg är tom</span>");
 
           $("#total-pris").css("display", "none");
+          $(".check-out").css("display", "none");
+          $(".cart-title").css("display", "none");
         }
       });
     });
@@ -116,22 +119,34 @@ $(document).ready(function() {
 
       $(this)
         .css("display", "none")
-        .after("<span>Din varukorg är tom</span>");
+        .after("<span style='font-size:20px;'>Din varukorg är tom</span>");
       $("#total-pris").css("display", "none");
+      $(".check-out").css("display", "none");
+      $(".cart-title").css("display", "none");
 
       antalProdukter();
     });
+
     $("#submit-btn").on("click", function() {
-      $("#table2").remove();
+      // $("#table2").remove();
       $("#form").remove();
       localStorage.clear();
-      $("#total-pris").css("display", "none");
-
-      $(this)
+      // $("#total-pris").after(
+      //   "<br /><span>Thank you for your purchase. Your order will be delivered shortly.</span>"
+      // );
+      $(".clear-ls").css("display", "none");
+      $("footer").css("margin-top", "180px");
+      $("td").css("border", "none");
+      $(".total").css("display", "none");
+      $(".delete").css("display", "none");
+      $(".order-style-rubrik").css("display", "none");
+      $("#order-style-rubrik1")
         .css("display", "none")
         .after(
-          "<span>Thank you for your purchase. Your order will be delivered shortly.</span>"
+          "<span>Thank you for your purchase. <br />Your order will be delivered shortly.</span>"
         );
+
+      $(this).css("display", "none");
     });
   }
 

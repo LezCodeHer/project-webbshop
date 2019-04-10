@@ -2,24 +2,24 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 75rem;
-  /* padding-top: 3.3rem; */
+  min-height: 40rem;
   background-color: #eee9e3 !important;
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
   font-weight: bolder;
-}
-.ml-auto {
-  margin-left: auto !important;
-  font-size: 20px;
-  padding: 0 30px;
-  letter-spacing: 8px;
 }
 #store-name {
   font-size: 50px !important;
   padding: 0 !important;
   margin-left: 30px;
   letter-spacing: 20px;
+}
+/* boostrap li element */
+.ml-auto {
+  margin-left: auto !important;
+  font-size: 20px;
+  padding: 0 30px;
+  letter-spacing: 8px;
 }
 #basket-icon {
   font-size: 30px;
@@ -33,9 +33,9 @@ body {
   font-size: 30px;
   cursor: pointer;
 }
-.dropdown-menu {
+/* .dropdown-menu {
   width: 500px !important;
-}
+} */
 .banner {
   background-color: white;
   margin-top: 60px;
@@ -52,7 +52,7 @@ body {
   justify-content: center;
   width: 1100px;
   margin: 50px auto;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 2px;
 }
 .title4 {
@@ -74,7 +74,7 @@ h5 {
   width: 250px !important;
   box-shadow: 0px 8px 8px 0px #928d8d !important;
 }
-.card-content{
+.card-content {
   height: 75px;
 }
 .jsonlink {
@@ -96,7 +96,7 @@ h5 {
 }
 #bestallning-body {
   text-align: center;
-  box-sizing: border-box;
+  margin-top: 100px;
 }
 #container2 {
   width: 50%;
@@ -106,7 +106,6 @@ tr {
   border: 1px solid rgb(227, 218, 218);
   height: 30px;
 }
-
 td {
   border: 1px solid rgb(227, 218, 218);
 }
@@ -149,7 +148,7 @@ label {
   background-color: #54b7b2 !important;
   font-size: 15px;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
 }
 #footer-content {
@@ -191,20 +190,26 @@ input {
   list-style: none;
 }
 #table1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 15px;
   width: 95%;
   margin: auto;
 }
 #table2 {
+  font-family: "Abel", sans-serif;
   width: 40%;
   margin: auto;
 }
-.antal {
+/* .antal {
   width: 15px;
   text-align: center;
+} */
+#antal-produkter{
+  font-family: "Abel", sans-serif !important;
+  color: white;
+  font-size: 18px;
 }
-.github-icon{
+.github-icon {
   font-family: "Poiret One", cursive;
   color: white;
   font-size: 30px;
@@ -214,7 +219,7 @@ input {
   margin-left: auto;
 }
 
-.github-icon a{
+.github-icon a {
   color: white;
   text-decoration: none;
 }
@@ -234,13 +239,16 @@ input {
   z-index: 2;
   border: 1px solid rgb(176, 170, 170);
   box-shadow: 0px 8px 8px 0px #928d8d;
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  padding: 10px;
 }
 
-/* .btn-group .overlay #total-pris {
-  font-family: Arial, Helvetica, sans-serif !important;
+#total-pris {
+  font-family: "Abel", sans-serif !important;
   font-size: 18px;
   font-weight: lighter;
-} */
+}
 
 /* .title-varukorg {
   
@@ -257,7 +265,7 @@ input {
   color: black;
   font-weight: lighter;
   background-color: #feaead;
-  border-radius: 3px; 
+  border-radius: 3px;
   text-decoration: none;
   padding: 5px;
   color: white;
@@ -266,6 +274,6 @@ input {
 }
 .check-out:hover {
   text-decoration: none;
-  background-color: rgb(68, 65, 65);  
-  color: white; 
+  background-color: rgb(68, 65, 65);
+  color: white;
 }

@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -59,7 +59,7 @@
 
     <!--  -->
 
-    <h4 style="text-align: center; margin: 50px;">Order Summary</h4>
+    <h4 id="order-style-rubrik1" class="order-style-rubrik" style="text-align: center; margin: 50px;">Order Summary</h4>
 
     <!--  -->
 
@@ -69,7 +69,7 @@
 
     <!---------------- Order form ------------->
 
-    <h4 style="text-align: center; margin: 50px;">Shipping</h4>
+    <h4 class="order-style-rubrik" style="text-align: center; margin: 50px;">Shipping</h4>
     <form id="form">
       <div class="form-row">
         <div class="form-group col-md-12">
@@ -163,6 +163,7 @@
         </div>
       </div>
       <a
+        href="#"
         id="submit-btn"
         type="submit"
         class="btn btn-primary"
@@ -218,28 +219,5 @@
     <script src="js/form.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bestallning.js"></script>
-    <!-- <script>
-      $(document).ready(function() {
-        $(".clear-ls").on("click", function() {
-          $(".table").remove();
-          localStorage.clear();
-          antalProdukter();
-          $(this)
-            .css("display", "none")
-            .after("<span>Din varukorg är tom</span>");
-          $("#total-pris").css("display", "none");
-        });
-        $("#submit-btn").on("click", function() {
-          $(".table").remove();
-          $("#form").remove();
-          // localStorage.clear();
-          $(this)
-            .css("display", "none")
-            .after(
-              "<span>Thank you for your purchase. Your order will be delivered shortly.</span>"
-            );
-        });
-      });
-    </script> -->
   </body>
 </html>

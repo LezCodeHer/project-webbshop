@@ -15,9 +15,10 @@ body {
 }
 
 #store-name {
-  font-size: 40px !important;
+  font-size: 50px !important;
   padding: 0 !important;
   margin-left: 30px;
+  letter-spacing: 20px;
 }
 #basket-icon {
   font-size: 30px;
@@ -50,6 +51,12 @@ body {
   width: 1100px;
   margin: 50px auto;
   font-family: 'Lora', serif-serif;
+}
+
+.title4{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 h5{

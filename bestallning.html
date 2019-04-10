@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Beställning</title>
+  </head>
 
-<<<<<<< HEAD
+  <body id="bestallning-body">
+    <!--------- Header --------->
+
     <nav
       class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-      style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important; height: 60px;"
+      style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important;"
     >
-      <a id="store-name" class="navbar-brand" href="./index.html">LIFE HACKS</a>
+      <a id="store-name" class="navbar-brand" href="index.html">LIFE HACKS</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
+        ∑
         data-target="#navbarCollapse"
         aria-controls="navbarCollapse"
         aria-expanded="false"
@@ -21,7 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -34,148 +58,116 @@
     </nav>
 
     <!--  -->
-=======
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Beställning</title>
-</head>
 
-<body id="bestallning-body">
+    <h4 style="text-align: center; margin: 50px;">Order</h4>
 
-  <!--------- Header --------->
-
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-    style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important;">
-    <a id="store-name" class="navbar-brand" href="index.html">LIFE HACKS</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" ∑ data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-      </ul>
-    </div>
-    <div class="basket-icon">
-      <i class="fa fa-shopping-basket"></i>
-    </div>
-  </nav>
-
-  <!-- <main role="main" class="container">
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p class="lead">
-          This example is a quick exercise to illustrate how fixed to top navbar
-          works. As you scroll, it will remain fixed to the top of your
-          browser’s viewport.
-        </p>
-        <a
-          class="btn btn-lg btn-primary"
-          href="{{ site.baseurl }}/docs/{{
-            site.docs_version
-          }}/components/navbar/"
-          role="button"
-          >View navbar docs &raquo;</a
-        >
-      </div>
-    </main> -->
-
-  <!--  -->
->>>>>>> e2e2b578ca4ac733589f293b6b88414c724944bc
-
-  <h4 style="text-align: center; margin: 50px;">Order</h4>
-
-<<<<<<< HEAD
     <!--  -->
 
     <table class="table"></table>
     <span id="total-pris"></span>
     <button class="clear-ls">Clear all</button>
-=======
-  <!-- <table id="container2"></table> -->
 
-  <!--  -->
+    <!---------------- Order form ------------->
 
-  <table id="table"></table>
-  <span id="total-pris"></span>
-  <button class="clear-ls">Clear all</button>
->>>>>>> e2e2b578ca4ac733589f293b6b88414c724944bc
+    <h4 style="text-align: center; margin: 50px;">Shipping</h4>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="user">First and last name*</label><br />
+          <input
+            id="inputName"
+            class="form-control"
+            type="name"
+            placeholder="First and Last name"
+            required
+          />
+          <p id="message"></p>
+        </div>
+        <div class="form-group col-md-12">
+          <label for="example-tel-input">Telephone*</label>
+          <input
+            id="inputTel"
+            class="form-control"
+            type="tel"
+            placeholder="0046 701234567"
+          />
+          <p id="msgTel"></p>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email*</label>
+          <input
+            id="inputEmail"
+            type="email"
+            class="form-control"
+            placeholder="yourEmail@mail.com"
+            required
+          />
+          <p id="msgEmail"></p>
+        </div>
+      </div>
+      <br />
+      <h4>Delivery Address:</h4>
+      <br />
+      <div class="form-group">
+        <label for="inputAddress">Street*</label>
+        <input
+          id="inputStreet"
+          type="text"
+          class="form-control"
+          placeholder="Drottninggatan 100A"
+          required
+        />
+        <p id="msgStreet"></p>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip*</label>
+          <input
+            id="inputZip"
+            type="text"
+            class="form-control"
+            placeholder="12345"
+            required
+          />
+          <p id="msgZip"></p>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCity">City*</label>
+          <input
+            id="inputCity"
+            type="text"
+            class="form-control"
+            placeholder="Stockholm"
+            required
+          />
+          <p id="msgCity"></p>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Country*</label>
+          <input
+            id="inputCountry"
+            type="text"
+            class="form-control"
+            placeholder="Sweden"
+            required
+          />
+          <p id="msgCountry"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck" required>
+            Agree to terms and conditions
+          </label>
+        </div>
+      </div>
+      <button id="submitBtn" type="submit" class="btn btn-primary">
+        Complete Order
+      </button>
+    </form>
 
-  <!---------------- Order form ------------->
-
-  <h4 style="text-align: center; margin: 50px;">Shipping</h4>
-  <form>
-    <div class="form-row">
-      <div class="form-group col-md-12">
-        <label for="user">First and last name*</label><br />
-        <input id="inputName" class="form-control" type="name" placeholder="First and Last name" required />
-        <p id="message"></p>
-      </div>
-      <div class="form-group col-md-12">
-        <label for="example-tel-input">Telephone*</label>
-        <input id="inputTel" class="form-control" type="tel" placeholder="0046 701234567" />
-        <p id="msgTel"></p>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="email">Email*</label>
-        <input id="inputEmail" type="email" class="form-control" placeholder="yourEmail@mail.com" required />
-        <p id="msgEmail"></p>
-      </div>
-    </div>
-    <br />
-    <h4>Delivery Address:</h4>
-    <br />
-    <div class="form-group">
-      <label for="inputAddress">Street*</label>
-      <input id="inputStreet" type="text" class="form-control" placeholder="Drottninggatan 100A" required />
-      <p id="msgStreet"></p>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-2">
-        <label for="inputZip">Zip*</label>
-        <input id="inputZip" type="text" class="form-control" placeholder="12345" required />
-        <p id="msgZip"></p>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputCity">City*</label>
-        <input id="inputCity" type="text" class="form-control" placeholder="Stockholm" required />
-        <p id="msgCity"></p>
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">Country*</label>
-        <input id="inputCountry" type="text" class="form-control" placeholder="Sweden" required />
-        <p id="msgCountry"></p>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck" />
-        <label class="form-check-label" for="gridCheck" required>
-          Agree to terms and conditions
-        </label>
-      </div>
-    </div>
-    <button id="submitBtn" type="submit" class="btn btn-primary">
-      Complete Order
-    </button>
-  </form>
-
-  <!---------- Footer ---------->
+    <!---------- Footer ---------->
 
     <!-- Footer -->
     <footer id="footer" class="page-footer font-small teal pt-4">
@@ -211,33 +203,27 @@
           </div>
           <!-- Grid column -->
 
-        <div class="github-icon">
-          <i class="fa fa-github"></i>
+          <div class="github-icon">
+            <i class="fa fa-github"></i>
+          </div>
         </div>
+        <!-- Grid row -->
       </div>
-      <!-- Grid row -->
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright" class="footer-copyright text-center py-3">
+      © 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/">
+        MDBootstrap.com</a
+      >
     </div>
-  </footer>
 
-  <!-- Copyright -->
-  <div id="copyright" class="footer-copyright text-center py-3">
-    © 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/">
-      MDBootstrap.com</a>
-  </div>
-
-  <!------- Javascript files --------->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/bestallning.js"></script>
-</body>
+    <!------- Javascript files --------->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bestallning.js"></script>
-
-    <!-- <script src="js/bestallning.js"></script> -->
   </body>
 </html>

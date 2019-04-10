@@ -44,6 +44,26 @@ function demoCallback(xhr) {
   for (let i = 0; i < item.length; i++) {
     a[i].addEventListener("click", function() {
       localStorage.setItem("orderItem" + i, JSON.stringify(item[i]));
+      antalProdukter();
     });
   }
 }
+
+// beräkna antal produkter i varukorgen
+function antalProdukter() {
+  let antal = 0;
+  let x;
+  Object.keys(localStorage).forEach(function(key) {
+    let obj3 = JSON.parse(localStorage.getItem(`${key}`));
+    x = parseInt(obj3.antal);
+    antal += x;
+  });
+  document.getElementById("antal-produkter").innerHTML = antal;
+}
+
+antalProdukter();
+
+
+
+
+

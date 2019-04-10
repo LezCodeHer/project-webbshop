@@ -58,6 +58,7 @@ $(document).ready(function() {
 
         //anropar funktionen total() som beräknar total pris när man ändrar antal produkter
         total();
+        antalProdukter();
       });
       $(`#minus${key}`).on("click", function() {
         x = document.getElementById(`antal${key}`).innerHTML;
@@ -72,6 +73,7 @@ $(document).ready(function() {
 
         //anropar funktionen total() som beräknar total pris när man ändrar antal produkter
         total();
+        antalProdukter();
       });
 
       // beräkna total pris för bara en produkt
@@ -126,12 +128,28 @@ $(document).ready(function() {
   // beräkna total pris när man raderar en objekt på pris att betala
   $(".delete").on("click", function() {
     total();
+    antalProdukter();
   });
+
+  // beräkna antal produkter i varukorgen
+  function antalProdukter() {
+    let antal = 0;
+    let x;
+    Object.keys(localStorage).forEach(function(key) {
+      let obj3 = JSON.parse(localStorage.getItem(`${key}`));
+      x = parseInt(obj3.antal);
+      antal += x;
+    });
+    document.getElementById("antal-produkter").innerHTML = antal;
+  }
+
+  antalProdukter();
 
   // delete alla produkter
   $(".clear-ls").on("click", function() {
     $(".table").remove();
     localStorage.clear();
+    antalProdukter();
 
     $(this)
       .css("display", "none")

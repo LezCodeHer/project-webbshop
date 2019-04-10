@@ -27,7 +27,7 @@
 
     <nav
       class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-      style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important;"
+      style="background-color:#54B7B2 !important; box-shadow: 0px 5px 5px 0px #928d8d !important; height: 60px  ;"
     >
       <a id="store-name" class="navbar-brand" href="index.html">LIFE HACKS</a>
       <button
@@ -59,7 +59,7 @@
 
     <!--  -->
 
-    <h4 style="text-align: center; margin: 50px;">Order</h4>
+    <h4 style="text-align: center; margin: 50px;">Order Summary</h4>
 
     <!--  -->
 
@@ -70,7 +70,7 @@
     <!---------------- Order form ------------->
 
     <h4 style="text-align: center; margin: 50px;">Shipping</h4>
-    <form>
+    <form id="form">
       <div class="form-row">
         <div class="form-group col-md-12">
           <label for="user">First and last name*</label><br />
@@ -162,9 +162,14 @@
           </label>
         </div>
       </div>
-      <button id="submitBtn" type="submit" class="btn btn-primary">
+      <a
+        href="./bestallning.html"
+        id="submit-btn"
+        type="submit"
+        class="btn btn-primary"
+      >
         Complete Order
-      </button>
+      </a>
     </form>
 
     <!---------- Footer ---------->
@@ -225,5 +230,28 @@
     <script src="js/form.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bestallning.js"></script>
+    <!-- <script>
+      $(document).ready(function() {
+        $(".clear-ls").on("click", function() {
+          $(".table").remove();
+          localStorage.clear();
+          antalProdukter();
+          $(this)
+            .css("display", "none")
+            .after("<span>Din varukorg är tom</span>");
+          $("#total-pris").css("display", "none");
+        });
+        $("#submit-btn").on("click", function() {
+          $(".table").remove();
+          $("#form").remove();
+          // localStorage.clear();
+          $(this)
+            .css("display", "none")
+            .after(
+              "<span>Thank you for your purchase. Your order will be delivered shortly.</span>"
+            );
+        });
+      });
+    </script> -->
   </body>
 </html>

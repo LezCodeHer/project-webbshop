@@ -24,16 +24,16 @@ $(document).ready(function() {
         "<td><img src=" +
         bild +
         "></td>" +
-        "<td><h3>" +
+        "<td><h6 class='title-varukorg'>" +
         title +
-        "</h3></td>" +
-        `<td><a href='#' type="button" class="total" id="minus` +
+        "</h6></td>" +
+        `<td><a href='#' type="button" class="total style-buttons" id="minus` +
         `${key}` +
-        `">-</a><span class="antal" id="antal` +
+        `">-</a><span class="antal style-button" id="antal` +
         `${key}` +
         `">` +
         antal +
-        `</span><a href='#' type="button" class="total" id="plus` +
+        `</span><a href='#' type="button" class="total style-button" id="plus` +
         `${key}` +
         `">+</a></td><span id="tprice` +
         `${key}` +
@@ -109,6 +109,30 @@ $(document).ready(function() {
         table[i].appendChild(tr);
       }
     }
+    // delete alla produkter
+    $(".clear-ls").on("click", function() {
+      $(".table").remove();
+      localStorage.clear();
+
+      $(this)
+        .css("display", "none")
+        .after("<span>Din varukorg är tom</span>");
+      $("#total-pris").css("display", "none");
+
+      antalProdukter();
+    });
+    $("#submit-btn").on("click", function() {
+      $("#table2").remove();
+      $("#form").remove();
+      localStorage.clear();
+      $("#total-pris").css("display", "none");
+
+      $(this)
+        .css("display", "none")
+        .after(
+          "<span>Thank you for your purchase. Your order will be delivered shortly.</span>"
+        );
+    });
   }
 
   // beräkna total pris att betala
@@ -120,7 +144,8 @@ $(document).ready(function() {
       x = parseInt(obj2.totalPris);
       nyTotalPris += x;
     });
-    document.getElementById("total-pris").innerHTML = nyTotalPris;
+    document.getElementById("total-pris").innerHTML =
+      "Total Price: &nbsp;&nbsp;" + nyTotalPris;
   }
 
   total();
@@ -144,17 +169,4 @@ $(document).ready(function() {
   }
 
   antalProdukter();
-
-  // delete alla produkter
-  $(".clear-ls").on("click", function() {
-    $(".table").remove();
-    localStorage.clear();
-    antalProdukter();
-
-    $(this)
-      .css("display", "none")
-      .after("<span>Din varukorg är tom</span>");
-
-    $("#total-pris").css("display", "none");
-  });
 });

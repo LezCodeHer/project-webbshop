@@ -2,61 +2,61 @@
   "items": [
     {
       "title": "HAPPINESS",
-      "beskrivning": "Beskrivning1",
+      "beskrivning": "<br>Don't worry, be happy - always",
       "bild": "./images/01-happiness-full.jpg",
-      "pris": "1000",
-      "totalPris": "1000",
+      "pris": "8000",
+      "totalPris": "8000",
       "antal": "1"
     },
 
     {
       "title": "TIME",
-      "beskrivning": "Beskrivning2",
+      "beskrivning": "<br>Not enough time? <br> Just some buy more!",
       "bild": "./images/02-time.jpg",
-      "pris": "2000",
-      "totalPris": "2000",
+      "pris": "20000",
+      "totalPris": "20000",
       "antal": "1"
     },
 
     {
       "title": "HEALTH",
-      "beskrivning": "Beskrivning 3",
+      "beskrivning": "Now you don't have to go to the gym or eat well to be healthy",
       "bild": "./images/03-health.jpg",
+      "pris": "17000",
+      "totalPris": "17000",
+      "antal": "1"
+    },
+
+    {
+      "title": "FRIENDSHIP",
+      "beskrivning": "<br>Go buy your BFF!",
+      "bild": "./images/04-friendship.jpg",
+      "pris": "8000",
+      "totalPris": "8000",
+      "antal": "1"
+    },
+
+    {
+      "title": "AFFECTION",
+      "beskrivning": "Fill up that oxytocin level with some physical affection",
+      "bild": "./images/05-affection01.jpg",
       "pris": "3000",
       "totalPris": "3000",
       "antal": "1"
     },
 
     {
-      "title": "FRIENDSHIP",
-      "beskrivning": "Beskrivning 4",
-      "bild": "./images/04-friendship.jpg",
-      "pris": "4000",
-      "totalPris": "4000",
-      "antal": "1"
-    },
-
-    {
-      "title": "AFFECTION",
-      "beskrivning": "Beskrivning 5",
-      "bild": "./images/05-affection01.jpg",
-      "pris": "5000",
-      "totalPris": "5000",
-      "antal": "1"
-    },
-
-    {
       "title": "IDEA",
-      "beskrivning": "Beskrivning 6",
+      "beskrivning": "<br>Your next idea is just a order away",
       "bild": "./images/06-a-idea.jpg",
-      "pris": "6000",
-      "totalPris": "6000",
+      "pris": "2000",
+      "totalPris": "2000",
       "antal": "1"
     },
 
     {
       "title": "LUCK",
-      "beskrivning": "Beskrivning 7",
+      "beskrivning": "<br>Choose from bad <br> or good luck",
       "bild": "./images/06-luck-clove.jpg",
       "pris": "7000",
       "totalPris": "7000",
@@ -65,91 +65,91 @@
 
     {
       "title": "LOVE",
-      "beskrivning": "Beskrivning 8",
+      "beskrivning": "<br>Now you never have to look for love again!",
       "bild": "./images/07-b-love-fire.jpg",
-      "pris": "8000",
-      "totalPris": "8000",
+      "pris": "12000",
+      "totalPris": "12000",
       "antal": "1"
     },
 
     {
       "title": "KARMA",
-      "beskrivning": "Beskrivning 9",
+      "beskrivning": "<br>Buy a refill",
       "bild": "./images/07-karma.jpg",
-      "pris": "9000",
-      "totalPris": "9000",
+      "pris": "6000",
+      "totalPris": "6000",
       "antal": "1"
     },
 
     {
       "title": "DREAM",
-      "beskrivning": "Beskrivning 10",
+      "beskrivning": "<br>Decide whatever you want to dream about",
       "bild": "./images/08-dreamtrue.jpg",
-      "pris": "10000",
-      "totalPris": "10000",
+      "pris": "4000",
+      "totalPris": "4000",
       "antal": "1"
     },
     {
       "title": "MENTAL HEALTH",
-      "beskrivning": "Beskrivning 11",
+      "beskrivning": "<br>Invest in your mental health",
       "bild": "./images/09-health-mental.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
-      "antal": "1"
-    },
-    {
-      "title": "PHYSICAL HEALTH",
-      "beskrivning": "Beskrivning 12",
-      "bild": "./images/10-health-physical.jpg",
       "pris": "12000",
       "totalPris": "12000",
       "antal": "1"
     },
     {
+      "title": "PHYSICAL HEALTH",
+      "beskrivning": "<br>It's more expensive to be sick",
+      "bild": "./images/10-health-physical.jpg",
+      "pris": "11000",
+      "totalPris": "11000",
+      "antal": "1"
+    },
+    {
       "title": "SLEEP",
-      "beskrivning": "Beskrivning 9",
+      "beskrivning": "<br>Never go a night with to little sleep",
       "bild": "./images/11-sleepstar.jpg",
-      "pris": "9000",
-      "totalPris": "9000",
+      "pris": "2000",
+      "totalPris": "2000",
       "antal": "1"
     },
 
     {
       "title": "MOTIVATION",
-      "beskrivning": "Beskrivning 10",
+      "beskrivning": "<br>Don't feel motivated? Well , not anymore",
       "bild": "./images/12-motivation.jpg",
+      "pris": "2000",
+      "totalPris": "2000",
+      "antal": "1"
+    },
+    {
+      "title": "SKILL",
+      "beskrivning": "Tired of having to practice and practice? <br>Just buy the skill of your choice",
+      "bild": "./images/13-skill.jpg",
+      "pris": "8000",
+      "totalPris": "8000",
+      "antal": "1"
+    },
+    {
+      "title": "KNOWLEDGE",
+      "beskrivning": "<br>Knowledge is power!",
+      "bild": "./images/14-knowledge.jpg",
       "pris": "10000",
       "totalPris": "10000",
       "antal": "1"
     },
     {
-      "title": "SKILL",
-      "beskrivning": "Beskrivning 11",
-      "bild": "./images/13-skill.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
-      "antal": "1"
-    },
-    {
-      "title": "KNOWLEDGE",
-      "beskrivning": "Beskrivning 12",
-      "bild": "./images/14-knowledge.jpg",
-      "pris": "12000",
-      "totalPris": "12000",
-      "antal": "1"
-    },
-    {
       "title": "INSPIRATION",
-      "beskrivning": "Beskrivning 9",
+      "beskrivning": "<br>Be inspired and inspire others",
       "bild": "./images/15-inspiration.jpg",
-      "pris": "9000",
-      "totalPris": "9000",
+      "pris": "4000",
+      "totalPris": "4000",
       "antal": "1"
     },
 
     {
       "title": "TALENT",
-      "beskrivning": "Beskrivning 10",
+      "beskrivning": "<br>Order now and then sign up for that talent show",
       "bild": "./images/16-a-talent.jpg",
       "pris": "10000",
       "totalPris": "10000",
@@ -157,32 +157,32 @@
     },
     {
       "title": "HELP & SUPPORT",
-      "beskrivning": "Beskrivning 11",
+      "beskrivning": "<br>Feeling stuck? Buy some help and support",
       "bild": "./images/16-support.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
+      "pris": "3000",
+      "totalPris": "3000",
       "antal": "1"
     },
     {
       "title": "ANGER",
-      "beskrivning": "Beskrivning 12",
+      "beskrivning": "It's never good to hold on to anger - get it out whenever it fits you",
       "bild": "./images/17-anger.jpg",
-      "pris": "12000",
-      "totalPris": "12000",
+      "pris": "6000",
+      "totalPris": "6000",
       "antal": "1"
     },
     {
       "title": "ATTENTION",
-      "beskrivning": "Beskrivning 9",
+      "beskrivning": "<br>Don't fight for the attention - buy it!",
       "bild": "./images/18-attention-white.jpg",
-      "pris": "9000",
-      "totalPris": "9000",
+      "pris": "5000",
+      "totalPris": "5000",
       "antal": "1"
     },
 
     {
       "title": "GUILT",
-      "beskrivning": "Beskrivning 10",
+      "beskrivning": "<br>Order it for yourself or someone else",
       "bild": "./images/19-a-guiltcake.jpg",
       "pris": "10000",
       "totalPris": "10000",
@@ -190,7 +190,7 @@
     },
     {
       "title": "RELAX",
-      "beskrivning": "Beskrivning 11",
+      "beskrivning": "<br>Feel relaxed whenever and wherever",
       "bild": "./images/19-relax.jpg",
       "pris": "11000",
       "totalPris": "11000",
@@ -198,76 +198,76 @@
     },
     {
       "title": "FRESH START",
-      "beskrivning": "Beskrivning 12",
+      "beskrivning": "<br>Sometimes all you need is a fresh start",
       "bild": "./images/20-freshstart.jpg",
-      "pris": "12000",
-      "totalPris": "12000",
+      "pris": "20000",
+      "totalPris": "20000",
       "antal": "1"
     },
     {
       "title": "ONE MORE TRY",
-      "beskrivning": "Beskrivning 9",
+      "beskrivning": "<br>Now you can try over and over and over again",
       "bild": "./images/21-tryagain.jpg",
-      "pris": "9000",
-      "totalPris": "9000",
+      "pris": "6000",
+      "totalPris": "6000",
       "antal": "1"
     },
 
     {
       "title": "STOP TIME ",
-      "beskrivning": "Beskrivning 10",
+      "beskrivning": "When time goes to fast, just stop it.<br>Up to one hour per day",
       "bild": "./images/22-stoptime.jpg",
-      "pris": "10000",
-      "totalPris": "10000",
+      "pris": "15000",
+      "totalPris": "15000",
       "antal": "1"
     },
     {
       "title": "ENERGY",
-      "beskrivning": "Beskrivning 11",
+      "beskrivning": "<br>Whenever you need that extra push",
       "bild": "./images/23-workhard.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
+      "pris": "3000",
+      "totalPris": "3000",
       "antal": "1"
     },
     {
       "title": "REVENGE",
-      "beskrivning": "Beskrivning 12",
+      "beskrivning": "<br>Revenge is a dish best served cold",
       "bild": "./images/24-paybackrevenge.jpg",
-      "pris": "12000",
-      "totalPris": "12000",
+      "pris": "23000",
+      "totalPris": "23000",
       "antal": "1"
     },
     {
       "title": "PERSONALITY",
-      "beskrivning": "Beskrivning 9",
+      "beskrivning": "<br>One, two, three or four...?",
       "bild": "./images/25-personalitycolor.jpg",
-      "pris": "9000",
-      "totalPris": "9000",
+      "pris": "14000",
+      "totalPris": "14000",
       "antal": "1"
     },
 
     {
       "title": "TRUST",
-      "beskrivning": "Beskrivning 10",
+      "beskrivning": "<br>Order the trust you deserve",
       "bild": "./images/26-trust.jpg",
-      "pris": "10000",
-      "totalPris": "10000",
+      "pris": "7000",
+      "totalPris": "7000",
       "antal": "1"
     },
     {
       "title": "FEAR",
-      "beskrivning": "Beskrivning 11",
+      "beskrivning": "<br>Get the most out of that horror movie",
       "bild": "./images/26-u-scared.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
+      "pris": "5000",
+      "totalPris": "5000",
       "antal": "1"
     },
     {
       "title": "SADNESS",
-      "beskrivning": "Beskrivning 12",
+      "beskrivning": "<br>Get it out and move on",
       "bild": "./images/27-a-sadness.jpg",
-      "pris": "12000",
-      "totalPris": "12000",
+      "pris": "2000",
+      "totalPris": "2000",
       "antal": "1"
     },
     {
@@ -280,26 +280,26 @@
     },
     {
       "title": "COLD ",
-      "beskrivning": "Choose from a light or a heavy cold",
+      "beskrivning": "<br>Choose from a light <br> or a heavy cold",
       "bild": "./images/28-cold.jpg",
-      "pris": "10000",
-      "totalPris": "10000",
+      "pris": "4000",
+      "totalPris": "4000",
       "antal": "1"
     },
     {
       "title": "STRENGTH",
-      "beskrivning": "Beskrivning 11",
+      "beskrivning": "<br>Never doubt your strength again",
       "bild": "./images/29-strength-anim.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
+      "pris": "3000",
+      "totalPris": "3000",
       "antal": "1"
     },
     {
-      "title": "XXX ",
-      "beskrivning": "Beskrivning 11",
-      "bild": "./images/banner.jpg",
-      "pris": "11000",
-      "totalPris": "11000",
+      "title": "* Gift Card *",
+      "beskrivning": "Buy someone something nice...or maybe something less nice",
+      "bild": "./images/30-giftcard.jpg",
+      "pris": "10000",
+      "totalPris": "10000",
       "antal": "1"
     }        
   ]

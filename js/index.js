@@ -32,7 +32,7 @@ function demoCallback(xhr) {
       "<h6 class='card-text card-content'>" +
       item[i].beskrivning +
       "</h6>" +
-      "<h6 id='pris' class='card-text'>" +
+      "<h6 id='pris' class='card-text'>$ " +
       item[i].pris +
       "</h6>" +
       "<a href='./index.html' class='index btn btn-primary'><div><i class='fa fa-shopping-basket'></i></div>&nbsp;Buy</a></div></div>";
@@ -63,4 +63,10 @@ function antalProdukter() {
 
 antalProdukter();
 
-
+function overlayOnOff() {
+  if (document.getElementById("overlay").style.display === "block") {
+    document.getElementById("overlay").style.display = "none";
+  } else {
+    document.getElementById("overlay").style.display = "block";
+  }
+}

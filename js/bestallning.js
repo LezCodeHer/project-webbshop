@@ -4,8 +4,9 @@ $(document).ready(function() {
   if (localStorage.length === 0) {
     $(".clear-ls")
       .css("display", "none")
-      .after("<span>Din varukorg är tom</span>");
-
+      .after("<span style='font-size:20px;'>Din varukorg är tom</span>");
+    $(".check-out").css("display", "none");
+    $(".cart-title").css("display", "none");
     $("#total-pris").css("display", "none");
   } else {
     const table = document.getElementsByClassName("table");
@@ -21,27 +22,27 @@ $(document).ready(function() {
       let totalPris = obj.totalPris;
 
       let output2 =
-        "<td><img src=" +
+        "<td style='transform: unset;'><img src=" +
         bild +
         "></td>" +
-        "<td><h6 class='title-varukorg'>" +
+        "<td><h6 class='title-varukorg' style='margin:0;'>" +
         title +
         "</h6></td>" +
-        `<td><a href='#' type="button" class="total style-buttons" id="minus` +
+        `<td><a href='#' class="total style-buttons" id="minus` +
         `${key}` +
-        `">-</a><span class="antal style-button" id="antal` +
+        `">&minus;</a><span class="antal style-buttons" id="antal` +
         `${key}` +
         `">` +
         antal +
-        `</span><a href='#' type="button" class="total style-button" id="plus` +
+        `</span><a href='#' class="total style-buttons" id="plus` +
         `${key}` +
-        `">+</a></td><span id="tprice` +
+        `">+</a></td><td><span id="tprice` +
         `${key}` +
-        `">` +
+        `">$ ` +
         totalPris +
-        `</span><td><a class='delete' id='delete-product` +
+        `</span></td><td style='transform: unset;'><a class='delete' id='delete-product` +
         `${key}` +
-        `'><i id="trash-icon" class="fa fa-trash-o"></i></button></td>`;
+        `'><i style='margin-top: 10px;' id="trash-icon" class="fa fa-trash-o"></i></a></td>`;
 
       // anropar funktionen tableMaker som skapar rader och för varje vald produkt
       tableMaker(output2);
@@ -93,9 +94,11 @@ $(document).ready(function() {
         if (localStorage.length === 0) {
           $(".clear-ls")
             .css("display", "none")
-            .after("<span>Din varukorg är tom</span>");
+            .after("<span style='font-size:20px;'>Din varukorg är tom</span>");
 
           $("#total-pris").css("display", "none");
+          $(".check-out").css("display", "none");
+          $(".cart-title").css("display", "none");
         }
       });
     });
@@ -116,22 +119,34 @@ $(document).ready(function() {
 
       $(this)
         .css("display", "none")
-        .after("<span>Din varukorg är tom</span>");
+        .after("<span style='font-size:20px;'>Din varukorg är tom</span>");
       $("#total-pris").css("display", "none");
+      $(".check-out").css("display", "none");
+      $(".cart-title").css("display", "none");
 
       antalProdukter();
     });
+
     $("#submit-btn").on("click", function() {
-      $("#table2").remove();
+      // $("#table2").remove();
       $("#form").remove();
       localStorage.clear();
-      $("#total-pris").css("display", "none");
-
-      $(this)
+      // $("#total-pris").after(
+      //   "<br /><span>Thank you for your purchase. Your order will be delivered shortly.</span>"
+      // );
+      $(".clear-ls").css("display", "none");
+      $("footer").css("margin-top", "180px");
+      $("td").css("border", "none");
+      $(".total").css("display", "none");
+      $(".delete").css("display", "none");
+      $(".order-style-rubrik").css("display", "none");
+      $("#order-style-rubrik1")
         .css("display", "none")
         .after(
-          "<span>Thank you for your purchase. Your order will be delivered shortly.</span>"
+          "<span>Thank you for your purchase. <br />Your order will be delivered shortly.</span>"
         );
+
+      $(this).css("display", "none");
     });
   }
 
@@ -145,7 +160,7 @@ $(document).ready(function() {
       nyTotalPris += x;
     });
     document.getElementById("total-pris").innerHTML =
-      "Total Price: &nbsp;&nbsp;" + nyTotalPris;
+      "Total Price: &nbsp;&nbsp;$ " + nyTotalPris;
   }
 
   total();

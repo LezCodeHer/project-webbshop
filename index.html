@@ -10,7 +10,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -57,14 +60,18 @@
       <!-------- Shopping cart --------->
 
       <div class="btn-group">
-        <i id="basket-icon" class="fa fa-shopping-basket" onclick="overlayOnOff()"></i>
+        <i
+          id="basket-icon"
+          class="fa fa-shopping-basket"
+          onclick="overlayOnOff()"
+        ></i>
         <div id="antal-produkter"></div>
 
         <div id="overlay">
           <!-- <h5 class="cart-title">Here's what's in your cart</h5> -->
           <table class="table" id="table1"></table>
           <span id="total-pris"></span>
-          <button class="clear-ls">Empty Cart</button><br>
+          <button class="clear-ls">Empty Cart</button><br />
           <a href="./bestallning.html" class="check-out">Go to Check Out</a>
         </div>
       </div>
@@ -92,11 +99,11 @@
          <div class="row">
          <div id="footer-content" class="col-md-6 mt-md-0 mt-3">
             <h5 class="text-uppercase">SHIPPING & PAYMENT</h5>
-            <hr>
-              <p>Free Worldwide Shipping</p>
-              <p>30 Days Returns</p>
-              <p>Secure Payments</p>
-           </div>
+            <hr />
+            <p>Free Worldwide Shipping</p>
+            <p>30 Days Returns</p>
+            <p>Secure Payments</p>
+          </div>
           <!-- Grid column -->
 
           <hr class="clearfix w-100 d-md-none pb-3" />
@@ -104,14 +111,18 @@
           <!-- Grid column -->
           <div class="footer-content col-md-6 mb-md-0 mb-3">
             <h5 class="text-uppercase">GET IN TOUCH</h5>
-            <hr>
-              PHONE: 0046 123 456 7 <br>
-              E-MAIL: emailus@lifehacks.com          
+            <hr />
+            PHONE: 0046 123 456 7 <br />
+            E-MAIL: emailus@lifehacks.com
           </div>
           <!-- Grid column -->
 
           <div class="github-icon">
-            <a href="https://github.com/LezCodeHer/project-webshop" class="fa fa-github" target="_blank"></a>
+            <a
+              href="https://github.com/LezCodeHer/project-webshop"
+              class="fa fa-github"
+              target="_blank"
+            ></a>
           </div>
         </div>
         <!-- Grid row -->
@@ -126,8 +137,7 @@
     <!-------- JS files --------->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/bestallning.js"></script>
+    <script src="js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -143,12 +153,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function off() {
-        if (document.getElementById("overlay").style.display === "block") {
-          document.getElementById("overlay").style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
